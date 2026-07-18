@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prendre rendez-vous — I.A.C Ressources</title>
+<meta name="description" content="Réservez votre accompagnement avec Isabelle André Courias — psycho-praticienne, formatrice PNL et coach d'entreprise." />
+<link rel="canonical" href="reservation.html" />
+<link rel="icon" href="IAC_logo_V2-removebg-preview.png" type="image/png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:title" content="Prendre rendez-vous — I.A.C Ressources" />
+<meta property="og:description" content="Réservez votre accompagnement avec Isabelle André Courias." />
+<meta property="og:image" content="Isabelle.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-sans text-olive-dark antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
+  Aller au contenu principal
+</a>
+
+<header class="fixed top-0 inset-x-0 z-50 bg-creme/90 backdrop-blur-sm border-b border-sable">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3" aria-label="Navigation principale">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="IAC_logo_V2-removebg-preview.png" alt="I.A.C Ressources" class="h-12 sm:h-14 w-auto object-contain" />
+      <span class="hidden sm:block text-[11px] tracking-wide text-olive-dark/70 -ml-1">Isabelle André Courias</span>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-6 text-sm font-medium text-olive-dark">
+      <li><a href="index.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Accueil</a></li>
+      <li><a href="outils.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Mes outils</a></li>
+      <li><a href="podcasts.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Podcasts</a></li>
+      <li><a href="ateliers.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Ateliers &amp; Agenda</a></li>
+      <li><a href="apropos.html" data-nav-link class="hover:text-terracotta transition-all duration-300">À propos</a></li>
+      <li><a href="blog.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Blog</a></li>
+    </ul>
+
+    <a href="reservation.html" data-nav-link class="hidden md:inline-block clay-btn bg-terracotta text-creme px-5 py-2.5 text-sm font-medium tracking-wide hover:bg-terracotta-dark transition-all duration-300 shadow-md shadow-terracotta/20">
+      Réservation
+    </a>
+
+    <button data-nav-toggle type="button" class="md:hidden clay-btn bg-ocre/20 p-2.5 text-terracotta-dark" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg data-icon-open width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      <svg data-icon-close class="hidden" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+    </button>
+  </nav>
+
+  <ul id="mobile-menu" data-nav-menu class="hidden md:hidden flex-col gap-1 px-6 pb-4 bg-creme">
+    <li><a href="index.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Accueil</a></li>
+    <li><a href="outils.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Mes outils</a></li>
+    <li><a href="podcasts.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Podcasts</a></li>
+    <li><a href="ateliers.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Ateliers &amp; Agenda</a></li>
+    <li><a href="apropos.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">À propos</a></li>
+    <li><a href="blog.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Blog</a></li>
+  </ul>
+</header>
+
+<main id="main" class="px-6 py-16 sm:py-20 pt-32 sm:pt-36">
+  <div class="max-w-2xl mx-auto">
+    <div class="reveal text-center mb-12">
+      <p class="font-script text-2xl text-terracotta mb-1">Un pas à la fois</p>
+      <h1 class="text-3xl sm:text-4xl font-light text-olive-dark">Prendre rendez-vous</h1>
+      <p class="mt-3 text-olive-dark/70 max-w-md mx-auto">
+        Choisissez l'accompagnement qui vous parle et laissez vos coordonnées —
+        je reviens vers vous rapidement.
+      </p>
+    </div>
+
+    <form
+      id="bookingForm"
+      action="https://formspree.io/f/mvzjqwoa"
+      method="POST"
+      class="reveal clay-soft bg-white/80 border border-sable shadow-xl p-8 sm:p-10 space-y-7"
+    >
+      <div>
+        <label for="name" class="block mb-2 text-sm font-medium text-olive-dark">
+          Nom complet <span class="text-terracotta-dark">*</span>
+        </label>
+        <input
+          type="text" id="name" name="name" required
+          class="w-full px-4 py-3 rounded-xl border border-sable bg-creme/60 focus:outline-none focus:ring-2 focus:ring-ocre focus:border-ocre transition-all duration-300"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium text-olive-dark">
+          Adresse email <span class="text-terracotta-dark">*</span>
+        </label>
+        <input
+          type="email" id="email" name="email" required
+          class="w-full px-4 py-3 rounded-xl border border-sable bg-creme/60 focus:outline-none focus:ring-2 focus:ring-ocre focus:border-ocre transition-all duration-300"
+        />
+      </div>
+
+      <div>
+        <label for="phone" class="block mb-2 text-sm font-medium text-olive-dark">Téléphone</label>
+        <input
+          type="tel" id="phone" name="phone"
+          class="w-full px-4 py-3 rounded-xl border border-sable bg-creme/60 focus:outline-none focus:ring-2 focus:ring-ocre focus:border-ocre transition-all duration-300"
+        />
+      </div>
+
+      <div>
+        <label class="block mb-3 text-sm font-medium text-olive-dark">
+          Choisissez votre accompagnement <span class="text-terracotta-dark">*</span>
+        </label>
+        <div class="radio-card-group grid sm:grid-cols-2 gap-4">
+          <div class="radio-card relative">
+            <input type="radio" id="psycho" name="coaching" value="Psycho-praticienne" required />
+            <label for="psycho" class="block h-full p-4 border-2 border-sable rounded-2xl bg-creme/60 cursor-pointer hover:border-ocre transition-all duration-300">
+              <span class="block font-script text-xl text-terracotta-dark mb-1">Psycho-praticienne</span>
+              <span class="block text-xs text-olive-dark/70">Un espace d'écoute pour explorer votre histoire</span>
+            </label>
+          </div>
+          <div class="radio-card relative">
+            <input type="radio" id="pnl" name="coaching" value="Formation PNL" required />
+            <label for="pnl" class="block h-full p-4 border-2 border-sable rounded-2xl bg-creme/60 cursor-pointer hover:border-ocre transition-all duration-300">
+              <span class="block font-script text-xl text-terracotta-dark mb-1">Formation PNL</span>
+              <span class="block text-xs text-olive-dark/70">Les outils de la Programmation Neuro-Linguistique</span>
+            </label>
+          </div>
+          <div class="radio-card relative">
+            <input type="radio" id="entreprise" name="coaching" value="Coaching d'entreprise" required />
+            <label for="entreprise" class="block h-full p-4 border-2 border-sable rounded-2xl bg-creme/60 cursor-pointer hover:border-ocre transition-all duration-300">
+              <span class="block font-script text-xl text-terracotta-dark mb-1">Coaching d'entreprise</span>
+              <span class="block text-xs text-olive-dark/70">Communication et cohésion d'équipe</span>
+            </label>
+          </div>
+          <div class="radio-card relative">
+            <input type="radio" id="ateliers" name="coaching" value="Ateliers" required />
+            <label for="ateliers" class="block h-full p-4 border-2 border-sable rounded-2xl bg-creme/60 cursor-pointer hover:border-ocre transition-all duration-300">
+              <span class="block font-script text-xl text-terracotta-dark mb-1">Ateliers</span>
+              <span class="block text-xs text-olive-dark/70">Découverte PNL, cercles de parole, hypnose…</span>
+            </label>
+          </div>
+          <div class="radio-card relative sm:col-span-2">
+            <input type="radio" id="podcast" name="coaching" value="Podcast (invité)" required />
+            <label for="podcast" class="block h-full p-4 border-2 border-sable rounded-2xl bg-creme/60 cursor-pointer hover:border-ocre transition-all duration-300">
+              <span class="block font-script text-xl text-terracotta-dark mb-1">Podcast (invité)</span>
+              <span class="block text-xs text-olive-dark/70">Partager votre parcours en épisode</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label for="message" class="block mb-2 text-sm font-medium text-olive-dark">Votre message</label>
+        <textarea
+          id="message" name="message" rows="4"
+          placeholder="Parlez-moi de vous, de vos attentes, de vos questionnements..."
+          class="w-full px-4 py-3 rounded-xl border border-sable bg-creme/60 focus:outline-none focus:ring-2 focus:ring-ocre focus:border-ocre transition-all duration-300 resize-y"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="clay-btn w-full bg-terracotta text-creme py-4 font-medium tracking-widest uppercase text-sm hover:bg-terracotta-dark transition-all duration-300 shadow-lg shadow-terracotta/20"
+      >
+        Envoyer ma demande
+      </button>
+    </form>
+  </div>
+</main>
+
+<footer class="relative bg-olive-dark text-creme py-16 px-6 mt-8">
+  <div class="max-w-5xl mx-auto grid sm:grid-cols-3 gap-10 text-center sm:text-left">
+    <div>
+      <img src="IAC_logo_V2-removebg-preview.png" alt="I.A.C Ressources" class="h-14 w-auto object-contain bg-creme/95 rounded-xl px-3 py-2" />
+      <p class="mt-3 text-sm text-creme/70">Isabelle André Courias — Le poids et le sens des mots.</p>
+    </div>
+    <div>
+      <h3 class="uppercase tracking-widest text-xs text-ocre-light mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm text-creme/85">
+        <li><a href="tel:+33699194718" class="hover:text-ocre-light transition-colors">06 99 19 47 18</a></li>
+        <li><a href="mailto:iac.ressources@gmail.com" class="hover:text-ocre-light transition-colors">iac.ressources@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="uppercase tracking-widest text-xs text-ocre-light mb-3">Où me trouver</h3>
+      <p class="text-sm text-creme/85">Saint-Rémy-de-Provence</p>
+      <p class="text-sm text-creme/85">Tarascon</p>
+    </div>
+  </div>
+  <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources — Tous droits réservés.</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

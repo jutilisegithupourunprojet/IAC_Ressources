@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog — I.A.C Ressources</title>
+<meta name="description" content="Le blog d'Isabelle André Courias : réflexions et ressources autour de la psycho-pratique, la PNL et le coaching. Premiers articles bientôt en ligne." />
+<link rel="canonical" href="blog.html" />
+<link rel="icon" href="IAC_logo_V2-removebg-preview.png" type="image/png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:title" content="Blog — I.A.C Ressources" />
+<meta property="og:description" content="Réflexions et ressources autour de la psycho-pratique, la PNL et le coaching." />
+<meta property="og:image" content="Isabelle.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-sans text-olive-dark antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
+  Aller au contenu principal
+</a>
+
+<header class="fixed top-0 inset-x-0 z-50 bg-creme/90 backdrop-blur-sm border-b border-sable">
+  <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3" aria-label="Navigation principale">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="IAC_logo_V2-removebg-preview.png" alt="I.A.C Ressources" class="h-12 sm:h-14 w-auto object-contain" />
+      <span class="hidden sm:block text-[11px] tracking-wide text-olive-dark/70 -ml-1">Isabelle André Courias</span>
+    </a>
+
+    <ul class="hidden md:flex items-center gap-6 text-sm font-medium text-olive-dark">
+      <li><a href="index.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Accueil</a></li>
+      <li><a href="outils.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Mes outils</a></li>
+      <li><a href="podcasts.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Podcasts</a></li>
+      <li><a href="ateliers.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Ateliers &amp; Agenda</a></li>
+      <li><a href="apropos.html" data-nav-link class="hover:text-terracotta transition-all duration-300">À propos</a></li>
+      <li><a href="blog.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Blog</a></li>
+    </ul>
+
+    <a href="reservation.html" class="hidden md:inline-block clay-btn bg-terracotta text-creme px-5 py-2.5 text-sm font-medium tracking-wide hover:bg-terracotta-dark transition-all duration-300 shadow-md shadow-terracotta/20">
+      Réservation
+    </a>
+
+    <button data-nav-toggle type="button" class="md:hidden clay-btn bg-ocre/20 p-2.5 text-terracotta-dark" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg data-icon-open width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      <svg data-icon-close class="hidden" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+    </button>
+  </nav>
+
+  <ul id="mobile-menu" data-nav-menu class="hidden md:hidden flex-col gap-1 px-6 pb-4 bg-creme">
+    <li><a href="index.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Accueil</a></li>
+    <li><a href="outils.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Mes outils</a></li>
+    <li><a href="podcasts.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Podcasts</a></li>
+    <li><a href="ateliers.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Ateliers &amp; Agenda</a></li>
+    <li><a href="apropos.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">À propos</a></li>
+    <li><a href="blog.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Blog</a></li>
+    <li><a href="reservation.html" class="block mt-2 clay-btn bg-terracotta text-creme text-center py-2.5 font-medium">Réservation</a></li>
+  </ul>
+</header>
+
+<main id="main" class="px-6 pt-32 sm:pt-40 pb-24">
+  <div class="max-w-3xl mx-auto text-center">
+    <p class="reveal font-script text-2xl text-terracotta mb-2">Bientôt disponible</p>
+    <h1 class="reveal text-4xl sm:text-5xl font-light text-olive-dark">Blog</h1>
+    <p class="reveal mt-5 text-olive-dark/80 leading-relaxed max-w-xl mx-auto">
+      Des réflexions et des ressources autour de la psycho-pratique, la PNL, le
+      coaching et le sens des mots. Les premiers articles arrivent prochainement.
+    </p>
+
+    <!--
+      Emplacement pour la grille d'articles à venir, par exemple :
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left"> ... <article class="clay bg-white/70 border border-sable p-6">...</article> </div>
+    -->
+    <div class="reveal clay-soft mt-12 border-2 border-dashed border-sable-dark bg-white/50 px-8 py-14">
+      <div class="mx-auto w-14 h-14 clay-btn bg-ocre/20 flex items-center justify-center mb-5">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C1663A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" /></svg>
+      </div>
+      <p class="text-olive-dark/70 italic mb-6">Aucun article publié pour l'instant.</p>
+
+      <form action="https://formspree.io/f/mvzjqwoa" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input type="hidden" name="_subject" value="Nouvelle inscription — être prévenu(e) des articles du blog" />
+        <label for="blog-email" class="sr-only">Adresse email</label>
+        <input
+          type="email" id="blog-email" name="email" required placeholder="votre@email.com"
+          class="flex-1 px-4 py-3 rounded-xl border border-sable bg-creme/60 focus:outline-none focus:ring-2 focus:ring-ocre focus:border-ocre transition-all duration-300"
+        />
+        <button type="submit" class="clay-btn bg-terracotta text-creme px-6 py-3 font-medium tracking-wide hover:bg-terracotta-dark transition-all duration-300 shadow-md shadow-terracotta/20 whitespace-nowrap">
+          Me prévenir
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="relative bg-olive-dark text-creme py-16 px-6">
+  <div class="max-w-5xl mx-auto grid sm:grid-cols-3 gap-10 text-center sm:text-left">
+    <div>
+      <img src="IAC_logo_V2-removebg-preview.png" alt="I.A.C Ressources" class="h-14 w-auto object-contain bg-creme/95 rounded-xl px-3 py-2" />
+      <p class="mt-3 text-sm text-creme/70">Isabelle André Courias — Le poids et le sens des mots.</p>
+    </div>
+    <div>
+      <h3 class="uppercase tracking-widest text-xs text-ocre-light mb-3">Contact</h3>
+      <ul class="space-y-2 text-sm text-creme/85">
+        <li><a href="tel:+33699194718" class="hover:text-ocre-light transition-colors">06 99 19 47 18</a></li>
+        <li><a href="mailto:iac.ressources@gmail.com" class="hover:text-ocre-light transition-colors">iac.ressources@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="uppercase tracking-widest text-xs text-ocre-light mb-3">Où me trouver</h3>
+      <p class="text-sm text-creme/85">Saint-Rémy-de-Provence</p>
+      <p class="text-sm text-creme/85">Tarascon</p>
+    </div>
+  </div>
+  <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources — Tous droits réservés.</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
