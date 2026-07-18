@@ -109,6 +109,24 @@ body {
   .sticker-alt {
     transform: rotate(1.5deg);
   }
+
+  /* "le ruban écrit le nom" : le trait se dessine sous le texte comme un tracé manuscrit en direct */
+  .signature-text {
+    opacity: 0;
+    animation: signature-fade 1.2s 0.3s ease-out forwards;
+  }
+  .signature-line {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: signature-draw 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+@keyframes signature-fade {
+  to { opacity: 1; }
+}
+@keyframes signature-draw {
+  to { stroke-dashoffset: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -120,5 +138,13 @@ body {
     transition: none !important;
     opacity: 1 !important;
     transform: none !important;
+  }
+  .signature-text {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+  .signature-line {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
   }
 }
