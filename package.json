@@ -1,0 +1,16 @@
+{
+  "name": "iac-ressources",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Site I.A.C Ressources — Isabelle André Courias",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
+    "start": "http-server -p 8123"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "http-server": "^14.1.1",
+    "tailwindcss": "^4.3.3"
+  }
+}

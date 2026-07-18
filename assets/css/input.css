@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta: #C1663A;
+  --color-terracotta-dark: #A2502A;
+  --color-terracotta-light: #D98C63;
+
+  --color-ocre: #D9A441;
+  --color-ocre-dark: #B8842E;
+  --color-ocre-light: #E8C27A;
+
+  --color-lavande: #8C88A8;
+  --color-lavande-dark: #6E6A8A;
+  --color-lavande-light: #B3AFC9;
+
+  --color-olive: #7C8A57;
+  --color-olive-dark: #616D42;
+  --color-olive-light: #A3AE81;
+
+  --color-sable: #E4D3B4;
+  --color-sable-dark: #D3BC8E;
+  --color-sable-light: #EFE3CB;
+
+  --color-creme: #FBF7EF;
+  --color-creme-dark: #F3ECDC;
+
+  --font-script: "Caveat", cursive;
+  --font-sans: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-creme);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-creme-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-terracotta);
+  border-radius: 999px;
+}
+
+@layer components {
+  /* formes "plaque d'argile" asymétriques réutilisées sur cartes / boutons */
+  .clay {
+    border-radius: 63% 37% 54% 46% / 43% 37% 63% 57%;
+  }
+  .clay-alt {
+    border-radius: 38% 62% 57% 43% / 41% 47% 53% 59%;
+  }
+  .clay-btn {
+    border-radius: 62% 38% 45% 55% / 55% 42% 58% 45%;
+  }
+  .clay-soft {
+    border-radius: 2.5rem 2.5rem 2.5rem 0.75rem / 2.5rem 2.5rem 0.75rem 2.5rem;
+  }
+
+  .radio-card input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .radio-card input:checked + label {
+    border-color: var(--color-terracotta);
+    background-color: rgb(193 102 58 / 0.08);
+    box-shadow: 0 0 0 2px rgb(193 102 58 / 0.15);
+  }
+
+  /* apparition au scroll (remplace whileInView de Framer Motion) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .reveal-stagger.is-visible > * {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0ms; }
+  .reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 80ms; }
+  .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 160ms; }
+  .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 240ms; }
+  .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 320ms; }
+  .reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 400ms; }
+  .reveal-stagger.is-visible > *:nth-child(7) { transition-delay: 480ms; }
+  .reveal-stagger.is-visible > *:nth-child(8) { transition-delay: 560ms; }
+
+  /* accent "jovial" : petite rotation façon sticker posé à la main */
+  .sticker {
+    transform: rotate(-2deg);
+  }
+  .sticker-alt {
+    transform: rotate(1.5deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal-stagger > * {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
