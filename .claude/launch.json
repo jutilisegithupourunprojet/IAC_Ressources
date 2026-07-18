@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "iac-site",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["http-server", "-p", "8123"],
+      "port": 8123
+    }
+  ]
+}

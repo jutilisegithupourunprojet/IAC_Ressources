@@ -33,7 +33,40 @@
   pathCore.setAttribute('stroke-linecap', 'round');
   pathCore.setAttribute('stroke-linejoin', 'round');
 
-  svg.append(pathBack, pathCore);
+  /*
+   * Masque de lisibilité : le ruban s'estompe (au lieu de passer devant)
+   * derrière les titres et paragraphes. Un rectangle flouté par bloc de
+   * texte réduit localement l'opacité du tracé via un masque SVG.
+   */
+  const defs = document.createElementNS(svgNS, 'defs');
+
+  const blurFilter = document.createElementNS(svgNS, 'filter');
+  blurFilter.setAttribute('id', 'ribbon-text-fade-blur');
+  blurFilter.setAttribute('x', '-20%');
+  blurFilter.setAttribute('y', '-50%');
+  blurFilter.setAttribute('width', '140%');
+  blurFilter.setAttribute('height', '200%');
+  const feBlur = document.createElementNS(svgNS, 'feGaussianBlur');
+  feBlur.setAttribute('stdDeviation', '14');
+  blurFilter.appendChild(feBlur);
+
+  const mask = document.createElementNS(svgNS, 'mask');
+  mask.setAttribute('id', 'ribbon-text-fade-mask');
+  mask.setAttribute('maskUnits', 'userSpaceOnUse');
+  const maskBase = document.createElementNS(svgNS, 'rect');
+  maskBase.setAttribute('x', '0');
+  maskBase.setAttribute('y', '0');
+  maskBase.setAttribute('fill', 'white');
+  const maskCutouts = document.createElementNS(svgNS, 'g');
+  maskCutouts.setAttribute('filter', 'url(#ribbon-text-fade-blur)');
+  mask.append(maskBase, maskCutouts);
+  defs.append(blurFilter, mask);
+
+  const strokes = document.createElementNS(svgNS, 'g');
+  strokes.setAttribute('mask', 'url(#ribbon-text-fade-mask)');
+  strokes.append(pathBack, pathCore);
+
+  svg.append(defs, strokes);
   mount.appendChild(svg);
 
   function smoothPath(points) {
@@ -73,6 +106,10 @@
     svg.setAttribute('width', String(width));
     svg.setAttribute('height', String(height));
     mount.style.height = `${height}px`;
+
+    maskBase.setAttribute('width', String(width));
+    maskBase.setAttribute('height', String(height));
+    updateTextMask(rect);
 
     const count = Math.max(16, Math.round(height / 140));
     const center = width * 0.66;
@@ -133,6 +170,24 @@
     updateTarget();
   }
 
+  function updateTextMask(contentRect) {
+    while (maskCutouts.firstChild) maskCutouts.removeChild(maskCutouts.firstChild);
+    const pad = 10;
+    content.querySelectorAll('h1:not(.sr-only), h2:not(.sr-only), h3:not(.sr-only), p:not(.sr-only), blockquote:not(.sr-only)').forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.width === 0 || r.height === 0) return;
+      const cutout = document.createElementNS(svgNS, 'rect');
+      cutout.setAttribute('x', String(r.left - contentRect.left - pad));
+      cutout.setAttribute('y', String(r.top - contentRect.top - pad));
+      cutout.setAttribute('width', String(r.width + pad * 2));
+      cutout.setAttribute('height', String(r.height + pad * 2));
+      cutout.setAttribute('rx', '10');
+      cutout.setAttribute('fill', 'black');
+      cutout.setAttribute('fill-opacity', '0.82');
+      maskCutouts.appendChild(cutout);
+    });
+  }
+
   function updateTarget() {
     const scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
     const progress = Math.min(Math.max(window.scrollY / scrollable, 0), 1);
@@ -163,6 +218,17 @@
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(build, 150);
+  });
+
+  // Les blocs `.reveal` se translatent en apparaissant : une fois l'animation
+  // terminée, le texte n'est plus à la position mesurée par le dernier
+  // build(). On recale alors le masque (pas tout le tracé) sur sa position finale.
+  let maskRefreshTimer;
+  document.addEventListener('transitionend', (e) => {
+    if (e.target.closest && e.target.closest('.reveal, .reveal-stagger')) {
+      clearTimeout(maskRefreshTimer);
+      maskRefreshTimer = setTimeout(() => updateTextMask(content.getBoundingClientRect()), 80);
+    }
   });
   if ('ResizeObserver' in window) {
     new ResizeObserver(() => {
