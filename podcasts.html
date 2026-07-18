@@ -94,21 +94,30 @@
           <h2 id="episodes-title" class="sr-only">Épisodes</h2>
 
           <!--
-            Emplacements d'épisodes : remplacer chaque src="https://www.youtube.com/embed/REPLACE_WITH_VIDEO_ID"
-            par l'URL d'intégration YouTube réelle de l'épisode, et ajuster titre/description.
+            Emplacements d'épisodes : src doit être au format https://www.youtube.com/embed/VIDEO_ID
+            (Partager > Intégrer sur YouTube) — pas l'URL de la page /watch, que YouTube refuse
+            d'afficher en iframe ("n'autorise pas la connexion"). Mettre à jour titre/description
+            une fois l'épisode définitif.
           -->
           <div class="reveal-stagger grid md:grid-cols-2 gap-10">
             <article class="space-y-4">
               <div class="overflow-hidden border-4 border-olive/30 shadow-lg rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-xl rounded-bl-xl">
                 <div class="aspect-video bg-olive-dark/90 flex items-center justify-center">
-                  <iframe
+                  <div
+                    data-consent-embed
+                    data-embed-src="https://www.youtube.com/embed/FYGTT7YhywA"
+                    data-embed-title="Épisode — Du point A au point B"
+                    data-embed-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     class="w-full h-full"
-                    src="https://www.youtube.com/watch?v=FYGTT7YhywA&list=RDFYGTT7YhywA&start_radio=1"
-                    title="Épisode — Du point A au point B"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                  >
+                    <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-creme/80 text-center px-6">
+                      <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z" /></svg>
+                      <p class="text-xs leading-relaxed max-w-[220px]">Ce contenu dépose des cookies YouTube au chargement.</p>
+                      <button type="button" data-consent-embed-allow class="clay-btn bg-terracotta text-creme text-xs px-4 py-2 font-medium hover:bg-terracotta-dark transition-colors">
+                        Activer la vidéo
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <h3 class="font-script text-2xl text-olive-dark">Épisode....</h3>
@@ -121,14 +130,21 @@
             <article class="space-y-4">
               <div class="overflow-hidden border-4 border-olive/30 shadow-lg rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-xl rounded-br-xl">
                 <div class="aspect-video bg-olive-dark/90 flex items-center justify-center">
-                  <iframe
+                  <div
+                    data-consent-embed
+                    data-embed-src="https://www.youtube.com/embed/16y1AkoZkmQ"
+                    data-embed-title=" petit classique"
+                    data-embed-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     class="w-full h-full"
-                    src="https://www.youtube.com/watch?v=16y1AkoZkmQ&list=RD16y1AkoZkmQ&start_radio=1"
-                    title=" petit classique"
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                  >
+                    <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-creme/80 text-center px-6">
+                      <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z" /></svg>
+                      <p class="text-xs leading-relaxed max-w-[220px]">Ce contenu dépose des cookies YouTube au chargement.</p>
+                      <button type="button" data-consent-embed-allow class="clay-btn bg-terracotta text-creme text-xs px-4 py-2 font-medium hover:bg-terracotta-dark transition-colors">
+                        Activer la vidéo
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <h3 class="font-script text-2xl text-olive-dark">titre...</h3>
@@ -179,13 +195,14 @@
           <p class="text-sm text-creme/85">Tarascon</p>
         </div>
       </div>
-      <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources — Tous droits réservés.</p>
+      <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources — Tous droits réservés. · <button type="button" data-cookie-settings class="underline hover:text-creme/80 transition-colors">Gérer les cookies</button></p>
     </footer>
 
   </div>
 </div>
 
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/cookies.js" defer></script>
 <script src="assets/js/ribbon.js" defer></script>
 </body>
 </html>

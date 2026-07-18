@@ -103,12 +103,20 @@
           -->
           <div class="reveal clay-alt overflow-hidden border-4 border-sable shadow-2xl bg-creme">
             <div class="relative w-full" style="padding-bottom: 75%;">
-              <iframe
-                src="https://calendar.google.com/calendar/embed?src=REPLACE_WITH_CALENDAR_ID&ctz=Europe%2FParis"
-                title="Agenda des ateliers I.A.C Ressources"
-                class="absolute top-0 left-0 w-full h-full border-0"
-                loading="lazy"
-              ></iframe>
+              <div
+                data-consent-embed
+                data-embed-src="https://calendar.google.com/calendar/embed?src=REPLACE_WITH_CALENDAR_ID&ctz=Europe%2FParis"
+                data-embed-title="Agenda des ateliers I.A.C Ressources"
+                class="absolute top-0 left-0 w-full h-full"
+              >
+                <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-olive-dark/70 text-center px-6 bg-sable/20">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" /></svg>
+                  <p class="text-xs leading-relaxed max-w-[240px]">Ce contenu dépose des cookies Google Agenda au chargement.</p>
+                  <button type="button" data-consent-embed-allow class="clay-btn bg-terracotta text-creme text-xs px-4 py-2 font-medium hover:bg-terracotta-dark transition-colors">
+                    Activer l'agenda
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -163,13 +171,14 @@
           <p class="text-sm text-creme/85">Tarascon</p>
         </div>
       </div>
-      <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources — Tous droits réservés.</p>
+      <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources — Tous droits réservés. · <button type="button" data-cookie-settings class="underline hover:text-creme/80 transition-colors">Gérer les cookies</button></p>
     </footer>
 
   </div>
 </div>
 
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/cookies.js" defer></script>
 <script src="assets/js/ribbon.js" defer></script>
 </body>
 </html>
