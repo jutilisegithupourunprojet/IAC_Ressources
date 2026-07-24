@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-terracotta: #C1663A;
-  --color-terracotta-dark: #A2502A;
-  --color-terracotta-light: #D98C63;
+  --color-terracotta: #24A2BC;
+  --color-terracotta-dark: #2A8499;
+  --color-terracotta-light: #59CBE3;
 
-  --color-ocre: #D9A441;
-  --color-ocre-dark: #B8842E;
-  --color-ocre-light: #E8C27A;
+  --color-ocre: #B1A074;
+  --color-ocre-dark: #91835F;
+  --color-ocre-light: #C1B494;
 
-  --color-lavande: #8C88A8;
-  --color-lavande-dark: #6E6A8A;
-  --color-lavande-light: #B3AFC9;
+  --color-lavande: #2E96A1;
+  --color-lavande-dark: #277982;
+  --color-lavande-light: #4CBFCC;
 
-  --color-olive: #7C8A57;
-  --color-olive-dark: #616D42;
-  --color-olive-light: #A3AE81;
+  --color-olive: #226A7A;
+  --color-olive-dark: #1A4B58;
+  --color-olive-light: #48B7D0;
 
-  --color-sable: #E4D3B4;
-  --color-sable-dark: #D3BC8E;
-  --color-sable-light: #EFE3CB;
+  --color-sable: #CAC0A2;
+  --color-sable-dark: #ACA389;
+  --color-sable-light: #DAD2BE;
 
-  --color-creme: #FBF7EF;
-  --color-creme-dark: #F3ECDC;
+  --color-creme: #F3F9FA;
+  --color-creme-dark: #E7F3F5;
 
   --font-script: "Caveat", cursive;
   --font-sans: "Inter", sans-serif;
@@ -66,11 +66,6 @@ body {
     position: absolute;
     opacity: 0;
     pointer-events: none;
-  }
-  .radio-card input:checked + label {
-    border-color: var(--color-terracotta);
-    background-color: rgb(193 102 58 / 0.08);
-    box-shadow: 0 0 0 2px rgb(193 102 58 / 0.15);
   }
 
   /* apparition au scroll (remplace whileInView de Framer Motion) */
@@ -120,6 +115,31 @@ body {
     stroke-dashoffset: 200;
     animation: signature-draw 1.2s 0.3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
+
+  /* bandeau d'images défilant en continu, pause au survol/focus */
+  .marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 34s linear infinite;
+  }
+  .marquee-track-reverse {
+    animation-direction: reverse;
+  }
+  [data-marquee]:hover .marquee-track,
+  [data-marquee]:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+/*
+ * Hors @layer (donc prioritaire sur les utilitaires Tailwind border-sable/bg-creme
+ * posés sur le même <label>) : sans ça, la sélection au clic reste invisible car
+ * le layer "utilities" gagne toujours sur "components", quelle que soit la spécificité.
+ */
+.radio-card input:checked + label {
+  border-color: var(--color-terracotta);
+  background-color: color-mix(in srgb, var(--color-terracotta) 14%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-terracotta) 35%, transparent);
 }
 
 @keyframes signature-fade {
@@ -127,6 +147,10 @@ body {
 }
 @keyframes signature-draw {
   to { stroke-dashoffset: 0; }
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -138,6 +162,12 @@ body {
     transition: none !important;
     opacity: 1 !important;
     transform: none !important;
+  }
+  .marquee-track {
+    animation: none !important;
+  }
+  [data-marquee] {
+    overflow-x: auto;
   }
   .signature-text {
     animation: none !important;

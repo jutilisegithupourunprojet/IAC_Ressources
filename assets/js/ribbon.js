@@ -21,14 +21,14 @@
 
   const pathBack = document.createElementNS(svgNS, 'path');
   pathBack.setAttribute('fill', 'none');
-  pathBack.setAttribute('stroke', '#8C1F0B');
+  pathBack.setAttribute('stroke', '#216777');
   pathBack.setAttribute('stroke-width', '9');
   pathBack.setAttribute('stroke-linecap', 'round');
   pathBack.setAttribute('stroke-linejoin', 'round');
 
   const pathCore = document.createElementNS(svgNS, 'path');
   pathCore.setAttribute('fill', 'none');
-  pathCore.setAttribute('stroke', '#C72C0E');
+  pathCore.setAttribute('stroke', '#24A2BC');
   pathCore.setAttribute('stroke-width', '6');
   pathCore.setAttribute('stroke-linecap', 'round');
   pathCore.setAttribute('stroke-linejoin', 'round');
