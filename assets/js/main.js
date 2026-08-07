@@ -57,6 +57,24 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach((el) => el.classList.add('is-visible'));
   }
 
+  /* Vidéos de fond : respect de prefers-reduced-motion (CSS seul ne peut pas stopper une vidéo) */
+  const bgVideos = document.querySelectorAll('[data-bg-video]');
+  if (bgVideos.length) {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const applyMotionPref = (mql) => {
+      bgVideos.forEach((video) => {
+        if (mql.matches) {
+          video.pause();
+          video.removeAttribute('autoplay');
+        } else if (video.paused) {
+          video.play().catch(() => {});
+        }
+      });
+    };
+    applyMotionPref(reduceMotion);
+    reduceMotion.addEventListener('change', applyMotionPref);
+  }
+
   /* Écran d'intro (page d'accueil uniquement) : se fond au premier scroll */
   const intro = document.querySelector('[data-intro-overlay]');
   if (intro) {

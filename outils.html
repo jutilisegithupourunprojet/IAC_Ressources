@@ -30,7 +30,7 @@
 
   <div data-ribbon-content class="relative z-10">
 
-    <header class="fixed top-0 inset-x-0 z-50 bg-creme/90 backdrop-blur-sm border-b border-sable">
+    <header class="fixed top-0 inset-x-0 z-50 bg-creme/90 backdrop-blur-sm">
       <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3" aria-label="Navigation principale">
         <a href="index.html" class="flex items-center gap-3">
           <img src="IAC_logo_V2-removebg-preview.png" alt="I.A.C Ressources" class="h-12 sm:h-14 w-auto object-contain" />
@@ -65,13 +65,14 @@
         <li><a href="blog.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Blog</a></li>
         <li><a href="reservation.html" class="block mt-2 clay-btn bg-terracotta text-creme text-center py-2.5 font-medium">Réservation</a></li>
       </ul>
+      <div class="absolute inset-x-0 bottom-0 h-[3px] bg-gradient-to-r from-terracotta via-lavande to-olive" aria-hidden="true"></div>
     </header>
 
     <main id="main">
 
       <section class="relative pt-36 pb-16 px-6 overflow-hidden">
-        <span class="absolute top-24 right-10 w-3 h-3 rounded-full bg-ocre/60" aria-hidden="true"></span>
-        <span class="absolute bottom-6 left-10 w-2 h-2 rounded-full bg-lavande/60" aria-hidden="true"></span>
+        <span class="absolute top-24 right-10 w-3 h-3 rounded-full bg-terracotta/75" aria-hidden="true"></span>
+        <span class="absolute bottom-6 left-10 w-2 h-2 rounded-full bg-lavande/80" aria-hidden="true"></span>
         <div class="reveal max-w-3xl mx-auto text-center">
           <p class="font-script text-2xl text-terracotta mb-2">Comment j'accompagne</p>
           <h1 class="text-4xl sm:text-5xl font-light text-olive-dark">Mes outils</h1>
@@ -82,10 +83,10 @@
         </div>
 
         <nav aria-label="Sommaire des outils" class="reveal flex flex-wrap justify-center gap-3 mt-10">
-          <a href="#psycho-praticienne" class="sticker clay-btn px-4 py-2 text-sm font-medium bg-lavande/20 text-lavande-dark hover:bg-lavande/30 transition-colors">Psycho-praticienne</a>
-          <a href="#pnl" class="sticker-alt clay-btn px-4 py-2 text-sm font-medium bg-ocre/20 text-terracotta-dark hover:bg-ocre/30 transition-colors">Formation PNL</a>
-          <a href="#coaching-entreprise" class="sticker clay-btn px-4 py-2 text-sm font-medium bg-olive/20 text-olive-dark hover:bg-olive/30 transition-colors">Coaching d'entreprise</a>
-          <a href="#hypnose" class="sticker-alt clay-btn px-4 py-2 text-sm font-medium bg-terracotta/15 text-terracotta-dark hover:bg-terracotta/25 transition-colors">Hypnose Éricksonienne</a>
+          <a href="#psycho-praticienne" class="sticker clay-btn px-4 py-2 text-sm font-medium bg-lavande text-creme hover:bg-lavande-dark transition-colors">Psycho-praticienne</a>
+          <a href="#pnl" class="sticker-alt clay-btn px-4 py-2 text-sm font-medium bg-terracotta-dark text-creme hover:bg-terracotta transition-colors">Formation PNL</a>
+          <a href="#coaching-entreprise" class="sticker clay-btn px-4 py-2 text-sm font-medium bg-olive text-creme hover:bg-olive-dark transition-colors">Coaching d'entreprise</a>
+          <a href="#hypnose" class="sticker-alt clay-btn px-4 py-2 text-sm font-medium bg-terracotta text-creme hover:bg-terracotta-dark transition-colors">Hypnose Éricksonienne</a>
         </nav>
       </section>
 
@@ -109,115 +110,111 @@
         </div>
       </section>
 
-      <section id="psycho-praticienne" aria-labelledby="psycho-praticienne-title" class="scroll-mt-24 relative py-16 px-6 bg-lavande-light/15">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
-          <div class="reveal clay-btn bg-creme w-16 h-16 flex items-center justify-center shrink-0 shadow-sm">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2E96A1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1.5 6 4 2.5-2.5 4-4 6-4 4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9Z" /></svg>
+      <section id="psycho-praticienne" aria-labelledby="psycho-praticienne-title" class="scroll-mt-24 relative overflow-hidden flex items-center min-h-[480px] sm:min-h-[560px] py-20 px-6">
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="none" aria-hidden="true" data-bg-video
+               poster="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=1600&q=70">
+          <source src="assets/video/psycho-praticienne.webm" type="video/webm" />
+          <source src="assets/video/psycho-praticienne.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-lavande-dark/85 via-lavande-dark/55 to-lavande-dark/30 pointer-events-none"></div>
+
+        <div class="reveal relative z-10 max-w-2xl mx-auto text-center sm:text-left">
+          <div class="clay-btn bg-creme/95 w-16 h-16 flex items-center justify-center shrink-0 shadow-sm mx-auto sm:mx-0">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F9B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-9.5-9C.5 8 2 4 6 4c2 0 3.5 1.5 6 4 2.5-2.5 4-4 6-4 4 0 5.5 4 3.5 8-2.5 4.5-9.5 9-9.5 9Z" /></svg>
           </div>
-          <div class="reveal">
-            <h2 id="psycho-praticienne-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Psycho-praticienne</h2>
-            <p class="mt-4 text-olive-dark/85 leading-relaxed">
-              Un espace d'écoute pour explorer votre histoire, comprendre vos schémas et
-              retrouver vos propres ressources. Que ce soient les mots que l'on se dit ou
-              ceux que l'on transporte dans nos échanges, ils déterminent souvent les
-              réussites ou les incompréhensions. C'est ce fil que l'on tire ensemble.
-            </p>
-            <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
-              <li class="clay bg-white/70 border border-lavande/30 px-4 py-3 text-sm text-olive-dark/80">Mieux comprendre vos schémas répétitifs</li>
-              <li class="clay-alt bg-white/70 border border-lavande/30 px-4 py-3 text-sm text-olive-dark/80">Retrouver vos propres ressources</li>
-              <li class="clay bg-white/70 border border-lavande/30 px-4 py-3 text-sm text-olive-dark/80">Un accompagnement à votre rythme</li>
-              <li class="clay-alt bg-white/70 border border-lavande/30 px-4 py-3 text-sm text-olive-dark/80">Un espace confidentiel, sans jugement</li>
-            </ul>
-          </div>
-          <div class="reveal relative w-full h-40 md:w-40 md:h-40 lg:w-48 lg:h-48 clay overflow-hidden shadow-md shrink-0">
-            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=500&q=65" alt="Deux mains qui se tendent l'une vers l'autre" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-terracotta-dark/25 mix-blend-multiply"></div>
-          </div>
+          <h2 id="psycho-praticienne-title" class="mt-6 font-script text-3xl sm:text-4xl text-creme">Psycho-praticienne</h2>
+          <p class="mt-4 text-creme/90 leading-relaxed">
+            Un espace d'écoute pour explorer votre histoire, comprendre vos schémas et
+            retrouver vos propres ressources. Que ce soient les mots que l'on se dit ou
+            ceux que l'on transporte dans nos échanges, ils déterminent souvent les
+            réussites ou les incompréhensions. C'est ce fil que l'on tire ensemble.
+          </p>
+          <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Mieux comprendre vos schémas répétitifs</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Retrouver vos propres ressources</li>
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Un accompagnement à votre rythme</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Un espace confidentiel, sans jugement</li>
+          </ul>
         </div>
       </section>
 
-      <section id="pnl" aria-labelledby="pnl-title" class="scroll-mt-24 relative py-16 px-6 bg-ocre-light/15">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
-          <div class="reveal clay-btn bg-creme w-16 h-16 flex items-center justify-center shrink-0 shadow-sm">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B1A074" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" /></svg>
+      <section id="pnl" aria-labelledby="pnl-title" class="scroll-mt-24 relative overflow-hidden flex items-center min-h-[480px] sm:min-h-[560px] py-20 px-6">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=70" alt="Sommets montagneux au-dessus des nuages, symbole du chemin parcouru" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-b from-ocre-dark/85 via-ocre-dark/55 to-ocre-dark/30 pointer-events-none"></div>
+
+        <div class="reveal relative z-10 max-w-2xl mx-auto text-center sm:text-left">
+          <div class="clay-btn bg-creme/95 w-16 h-16 flex items-center justify-center shrink-0 shadow-sm mx-auto sm:mx-0">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A79A87" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" /></svg>
           </div>
-          <div class="reveal">
-            <h2 id="pnl-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Formation PNL</h2>
-            <p class="mt-4 text-olive-dark/85 leading-relaxed">
-              Enseignante en Programmation Neuro-Linguistique, Isabelle transmet des
-              outils concrets pour comprendre comment vous fonctionnez et changer,
-              pas à pas, ce qui ne vous convient plus. En individuel ou lors des
-              ateliers découverte proposés régulièrement.
-            </p>
-            <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
-              <li class="clay bg-white/70 border border-ocre/30 px-4 py-3 text-sm text-olive-dark/80">Des outils concrets, applicables immédiatement</li>
-              <li class="clay-alt bg-white/70 border border-ocre/30 px-4 py-3 text-sm text-olive-dark/80">Ateliers découverte et formations approfondies</li>
-              <li class="clay bg-white/70 border border-ocre/30 px-4 py-3 text-sm text-olive-dark/80">Une approche pas à pas, du point A au point B</li>
-              <li class="clay-alt bg-white/70 border border-ocre/30 px-4 py-3 text-sm text-olive-dark/80">Individuel ou en petit groupe</li>
-            </ul>
-          </div>
-          <div class="reveal relative w-full h-40 md:w-40 md:h-40 lg:w-48 lg:h-48 clay-alt overflow-hidden shadow-md shrink-0">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=500&q=65" alt="Sommets montagneux au-dessus des nuages, symbole du chemin parcouru" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-terracotta-dark/25 mix-blend-multiply"></div>
-          </div>
+          <h2 id="pnl-title" class="mt-6 font-script text-3xl sm:text-4xl text-creme">Formation PNL</h2>
+          <p class="mt-4 text-creme/90 leading-relaxed">
+            Enseignante en Programmation Neuro-Linguistique, Isabelle transmet des
+            outils concrets pour comprendre comment vous fonctionnez et changer,
+            pas à pas, ce qui ne vous convient plus. En individuel ou lors des
+            ateliers découverte proposés régulièrement.
+          </p>
+          <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Des outils concrets, applicables immédiatement</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Ateliers découverte et formations approfondies</li>
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Une approche pas à pas, du point A au point B</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Individuel ou en petit groupe</li>
+          </ul>
         </div>
       </section>
 
-      <section id="coaching-entreprise" aria-labelledby="coaching-entreprise-title" class="scroll-mt-24 relative py-16 px-6 bg-olive-light/15">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
-          <div class="reveal clay-btn bg-creme w-16 h-16 flex items-center justify-center shrink-0 shadow-sm">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#226A7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-6h4v6" /></svg>
+      <section id="coaching-entreprise" aria-labelledby="coaching-entreprise-title" class="scroll-mt-24 relative overflow-hidden flex items-center min-h-[480px] sm:min-h-[560px] py-20 px-6">
+        <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=1600&q=70" alt="Forêt de pins dans la brume, symbole du changement à traverser" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-b from-olive-dark/85 via-olive-dark/55 to-olive-dark/30 pointer-events-none"></div>
+
+        <div class="reveal relative z-10 max-w-2xl mx-auto text-center sm:text-left">
+          <div class="clay-btn bg-creme/95 w-16 h-16 flex items-center justify-center shrink-0 shadow-sm mx-auto sm:mx-0">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#376C41" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M6 21V9l6-4 6 4v12M10 21v-6h4v6" /></svg>
           </div>
-          <div class="reveal">
-            <h2 id="coaching-entreprise-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Coaching d'entreprise</h2>
-            <p class="mt-4 text-olive-dark/85 leading-relaxed">
-              Issue du monde de la communication d'entreprise — Chef de Publicité puis
-              Directrice de la Communication — Isabelle propose des interventions sur
-              mesure : communication interne, cohésion d'équipe et accompagnement du
-              changement, avec la même exigence du langage qui a construit sa carrière.
-            </p>
-            <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
-              <li class="clay bg-white/70 border border-olive/30 px-4 py-3 text-sm text-olive-dark/80">Communication interne &amp; cohésion d'équipe</li>
-              <li class="clay-alt bg-white/70 border border-olive/30 px-4 py-3 text-sm text-olive-dark/80">Accompagnement du changement</li>
-              <li class="clay bg-white/70 border border-olive/30 px-4 py-3 text-sm text-olive-dark/80">Coaching individuel de dirigeants et managers</li>
-              <li class="clay-alt bg-white/70 border border-olive/30 px-4 py-3 text-sm text-olive-dark/80">Interventions sur mesure, en entreprise</li>
-            </ul>
-          </div>
-          <div class="reveal relative w-full h-40 md:w-40 md:h-40 lg:w-48 lg:h-48 clay overflow-hidden shadow-md shrink-0">
-            <img src="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?auto=format&fit=crop&w=500&q=65" alt="Forêt de pins dans la brume, symbole du changement à traverser" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-terracotta-dark/25 mix-blend-multiply"></div>
-          </div>
+          <h2 id="coaching-entreprise-title" class="mt-6 font-script text-3xl sm:text-4xl text-creme">Coaching d'entreprise</h2>
+          <p class="mt-4 text-creme/90 leading-relaxed">
+            Issue du monde de la communication d'entreprise — Chef de Publicité puis
+            Directrice de la Communication — Isabelle propose des interventions sur
+            mesure : communication interne, cohésion d'équipe et accompagnement du
+            changement, avec la même exigence du langage qui a construit sa carrière.
+          </p>
+          <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Communication interne &amp; cohésion d'équipe</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Accompagnement du changement</li>
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Coaching individuel de dirigeants et managers</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Interventions sur mesure, en entreprise</li>
+          </ul>
         </div>
       </section>
 
-      <section id="hypnose" aria-labelledby="hypnose-title" class="scroll-mt-24 relative py-16 px-6 bg-terracotta-light/15">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
-          <div class="reveal clay-btn bg-creme w-16 h-16 flex items-center justify-center shrink-0 shadow-sm">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#24A2BC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.7-.08-1.38-.23-2.02A5.5 5.5 0 0 1 12 3Z" /></svg>
+      <section id="hypnose" aria-labelledby="hypnose-title" class="scroll-mt-24 relative overflow-hidden flex items-center min-h-[480px] sm:min-h-[560px] py-20 px-6">
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="none" aria-hidden="true" data-bg-video
+               poster="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1600&q=70">
+          <source src="assets/video/hypnose.webm" type="video/webm" />
+          <source src="assets/video/hypnose.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-terracotta-dark/85 via-terracotta-dark/55 to-terracotta-dark/30 pointer-events-none"></div>
+
+        <div class="reveal relative z-10 max-w-2xl mx-auto text-center sm:text-left">
+          <div class="clay-btn bg-creme/95 w-16 h-16 flex items-center justify-center shrink-0 shadow-sm mx-auto sm:mx-0">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4AA8B7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.7-.08-1.38-.23-2.02A5.5 5.5 0 0 1 12 3Z" /></svg>
           </div>
-          <div class="reveal">
-            <h2 id="hypnose-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Hypnose Éricksonienne</h2>
-            <p class="mt-4 text-olive-dark/85 leading-relaxed">
-              En complément du travail conscient d'introspection, l'hypnose Éricksonienne
-              permet de mobiliser en douceur vos ressources inconscientes — particulièrement
-              utile face au stress, aux blocages ou pour préparer une étape importante.
-            </p>
-            <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
-              <li class="clay bg-white/70 border border-terracotta/30 px-4 py-3 text-sm text-olive-dark/80">Une approche douce et respectueuse</li>
-              <li class="clay-alt bg-white/70 border border-terracotta/30 px-4 py-3 text-sm text-olive-dark/80">Utile face au stress et aux blocages</li>
-              <li class="clay bg-white/70 border border-terracotta/30 px-4 py-3 text-sm text-olive-dark/80">En complément d'un suivi en cours</li>
-              <li class="clay-alt bg-white/70 border border-terracotta/30 px-4 py-3 text-sm text-olive-dark/80">Pour préparer une étape importante</li>
-            </ul>
-          </div>
-          <div class="reveal relative w-full h-40 md:w-40 md:h-40 lg:w-48 lg:h-48 clay-alt overflow-hidden shadow-md shrink-0">
-            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=65" alt="Fleurs orangées sous un ciel bleu, symbole de douceur" class="w-full h-full object-cover" loading="lazy" />
-            <div class="absolute inset-0 bg-terracotta-dark/25 mix-blend-multiply"></div>
-          </div>
+          <h2 id="hypnose-title" class="mt-6 font-script text-3xl sm:text-4xl text-creme">Hypnose Éricksonienne</h2>
+          <p class="mt-4 text-creme/90 leading-relaxed">
+            En complément du travail conscient d'introspection, l'hypnose Éricksonienne
+            permet de mobiliser en douceur vos ressources inconscientes — particulièrement
+            utile face au stress, aux blocages ou pour préparer une étape importante.
+          </p>
+          <ul class="reveal-stagger mt-6 grid sm:grid-cols-2 gap-3">
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Une approche douce et respectueuse</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Utile face au stress et aux blocages</li>
+            <li class="clay bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">En complément d'un suivi en cours</li>
+            <li class="clay-alt bg-creme/15 backdrop-blur-sm border border-creme/30 px-4 py-3 text-sm text-creme/95">Pour préparer une étape importante</li>
+          </ul>
         </div>
       </section>
 
       <section aria-labelledby="outils-cta-title" class="relative py-20 px-6">
-        <div class="reveal max-w-4xl mx-auto text-center clay bg-terracotta/10 border border-terracotta/20 px-8 py-14">
+        <div class="reveal max-w-4xl mx-auto text-center clay bg-gradient-to-br from-terracotta/15 to-lavande/10 border border-terracotta/30 px-8 py-14">
           <h2 id="outils-cta-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Un outil vous parle particulièrement ?</h2>
           <p class="mt-4 text-olive-dark/80 max-w-xl mx-auto">
             Parlons-en ensemble lors d'un premier échange, pour choisir ce qui vous
@@ -231,7 +228,7 @@
 
     </main>
 
-    <footer class="relative bg-olive-dark text-creme py-16 px-6">
+    <footer class="relative bg-gradient-to-br from-olive-dark to-terracotta-dark text-creme py-16 px-6">
       <div class="reveal-stagger max-w-5xl mx-auto grid sm:grid-cols-3 gap-10 text-center sm:text-left">
         <div>
           <img src="IAC_logo_V2-removebg-preview.png" alt="I.A.C Ressources" class="h-14 w-auto object-contain bg-creme/95 rounded-xl px-3 py-2" />

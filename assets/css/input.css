@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-  --color-terracotta: #24A2BC;
-  --color-terracotta-dark: #2A8499;
-  --color-terracotta-light: #59CBE3;
+  --color-terracotta: #4AA8B7;
+  --color-terracotta-dark: #377886;
+  --color-terracotta-light: #8AC9D3;
 
-  --color-ocre: #B1A074;
-  --color-ocre-dark: #91835F;
-  --color-ocre-light: #C1B494;
+  --color-ocre: #A79A87;
+  --color-ocre-dark: #8A7E6C;
+  --color-ocre-light: #BCB1A0;
 
-  --color-lavande: #2E96A1;
-  --color-lavande-dark: #277982;
-  --color-lavande-light: #4CBFCC;
+  --color-lavande: #4F9B8A;
+  --color-lavande-dark: #36695E;
+  --color-lavande-light: #83C2B4;
 
-  --color-olive: #226A7A;
-  --color-olive-dark: #1A4B58;
-  --color-olive-light: #48B7D0;
+  --color-olive: #376C41;
+  --color-olive-dark: #295F41;
+  --color-olive-light: #5DAC6C;
 
-  --color-sable: #CAC0A2;
-  --color-sable-dark: #ACA389;
-  --color-sable-light: #DAD2BE;
+  --color-sable: #C4C7C2;
+  --color-sable-dark: #A8ABA5;
+  --color-sable-light: #D9DBD6;
 
-  --color-creme: #F3F9FA;
-  --color-creme-dark: #E7F3F5;
+  --color-creme: #F2F9FA;
+  --color-creme-dark: #E7F4F6;
 
   --font-script: "Caveat", cursive;
   --font-sans: "Inter", sans-serif;
