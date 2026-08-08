@@ -17,6 +17,11 @@
   --color-olive-dark: #295F41;
   --color-olive-light: #5DAC6C;
 
+  /* accent chaud "coucher de soleil" : contraste volontaire face au bleu/vert dominant */
+  --color-corail: #FF6F4C;
+  --color-corail-dark: #D9502F;
+  --color-corail-light: #FFAB8E;
+
   --color-sable: #C4C7C2;
   --color-sable-dark: #A8ABA5;
   --color-sable-light: #D9DBD6;
@@ -119,11 +124,32 @@ body {
     animation: handwrite-letter 0.8s ease-out forwards;
   }
 
+  /* formes colorées en fond de hero, dérive lente continue façon "aurore" */
+  .animate-drift-slow {
+    animation: drift-slow 22s ease-in-out infinite alternate;
+  }
+  .animate-drift-slow-reverse {
+    animation: drift-slow 26s ease-in-out infinite alternate-reverse;
+  }
+
+  /* points décoratifs qui flottent doucement au lieu de rester figés */
+  .animate-float {
+    animation: float-dot 4.5s ease-in-out infinite;
+  }
+  .animate-float-delayed {
+    animation: float-dot 5.5s ease-in-out infinite 0.8s;
+  }
+
+  /* halo pulsant discret, réservé aux 1-2 CTA les plus importants d'une page */
+  .animate-pulse-glow {
+    animation: pulse-glow 2.8s ease-in-out infinite;
+  }
+
   /* bandeau d'images défilant en continu, pause au survol/focus */
   .marquee-track {
     display: flex;
     width: max-content;
-    animation: marquee-scroll 34s linear infinite;
+    animation: marquee-scroll 24s linear infinite;
   }
   .marquee-track-reverse {
     animation-direction: reverse;
@@ -154,6 +180,19 @@ body {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
+@keyframes drift-slow {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(3%, -4%) scale(1.08); }
+  100% { transform: translate(-3%, 3%) scale(0.96); }
+}
+@keyframes float-dot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-corail) 45%, transparent); }
+  50% { box-shadow: 0 0 0 14px color-mix(in srgb, var(--color-corail) 0%, transparent); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   html {
@@ -175,5 +214,12 @@ body {
     animation: none !important;
     stroke-dashoffset: 0 !important;
     fill-opacity: 1 !important;
+  }
+  .animate-drift-slow,
+  .animate-drift-slow-reverse,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-pulse-glow {
+    animation: none !important;
   }
 }

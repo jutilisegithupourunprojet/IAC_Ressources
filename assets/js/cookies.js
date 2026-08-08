@@ -36,7 +36,7 @@
       <div class="max-w-3xl mx-auto clay-soft bg-creme border-2 border-sable shadow-2xl p-6 sm:p-7 flex flex-col sm:flex-row items-start sm:items-center gap-5">
         <p class="text-sm text-olive-dark/85 leading-relaxed flex-1">
           Ce site utilise des cookies tiers (vidéos YouTube, agenda Google) uniquement pour afficher
-          certains contenus intégrés. Vous pouvez les accepter ou les refuser — ce choix reste
+          certains contenus intégrés. Vous pouvez les accepter ou les refuser. Ce choix reste
           modifiable à tout moment depuis le pied de page.
         </p>
         <div class="flex gap-3 shrink-0">
