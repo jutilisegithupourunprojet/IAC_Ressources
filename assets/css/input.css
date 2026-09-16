@@ -26,6 +26,10 @@
   --color-sable-dark: #A8ABA5;
   --color-sable-light: #D9DBD6;
 
+  /* accent "or" : réservé aux formes décoratives de coin (DA Canva) */
+  --color-or: #C99A3D;
+  --color-or-dark: #A87A2B;
+
   --color-creme: #F2F9FA;
   --color-creme-dark: #E7F4F6;
 
