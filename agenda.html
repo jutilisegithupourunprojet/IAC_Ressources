@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Podcasts. I.A.C Ressources</title>
-<meta name="description" content="Le podcast d'Isabelle André Courias : tirer le fil rouge des gens sur leur parcours, du point A au point B. Épisodes et plateformes d'écoute." />
-<link rel="canonical" href="podcasts.html" />
+<title>Agenda. I.A.C Ressources</title>
+<meta name="description" content="Ateliers découverte PNL, coaching collectif en entreprise, cercles de parole, hypnose et ressources : retrouvez tous les ateliers d'Isabelle André Courias et réservez votre créneau." />
+<link rel="canonical" href="agenda.html" />
 <link rel="icon" href="IAC_logo_V2-removebg-preview.png" type="image/png" />
 
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="fr_FR" />
-<meta property="og:title" content="Podcasts. I.A.C Ressources" />
-<meta property="og:description" content="Tirer le fil rouge des gens sur leur parcours, du point A au point B." />
+<meta property="og:title" content="Agenda. I.A.C Ressources" />
+<meta property="og:description" content="Ateliers découverte PNL, coaching collectif, cercles de parole, hypnose et ressources." />
 <meta property="og:image" content="Isabelle.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,106 +72,90 @@
 
     <main id="main">
 
-      <section class="relative pt-36 pb-14 px-6 overflow-hidden">
-        <div class="reveal max-w-3xl mx-auto text-center">
-          <p class="font-script text-2xl text-terracotta mb-2">Des voix, des parcours</p>
-          <h1 class="text-4xl sm:text-5xl font-light text-olive-dark">Podcasts</h1>
-          <p class="mt-5 text-black/80 leading-relaxed">
-            Tirer le fil rouge des gens sur leur parcours : un même fil tiré d'un invité
-            à l'autre, pour comprendre comment chacun donne du sens à son propre chemin
-            et avance, à sa façon.
-          </p>
-        </div>
+      <section class="relative overflow-hidden flex items-center min-h-[440px] sm:min-h-[500px] pt-36 pb-10 px-6">
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline preload="none" aria-hidden="true" data-bg-video
+               poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=70">
+          <source src="assets/video/nuages.webm" type="video/webm" />
+          <source src="assets/video/nuages.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-b from-terracotta-dark/80 via-terracotta-dark/50 to-terracotta-dark/25 pointer-events-none"></div>
 
-        <div class="reveal-stagger flex flex-wrap justify-center gap-3 mt-10">
-          <span class="clay-btn px-4 py-2 text-xs font-medium uppercase tracking-wide bg-white/70 border border-sable text-black/60">Spotify. Bientôt disponible</span>
-          <span class="clay-btn px-4 py-2 text-xs font-medium uppercase tracking-wide bg-white/70 border border-sable text-black/60">Apple Podcasts. Bientôt disponible</span>
-          <span class="clay-btn px-4 py-2 text-xs font-medium uppercase tracking-wide bg-white/70 border border-sable text-black/60">YouTube. Bientôt disponible</span>
+
+        <div class="reveal relative z-10 max-w-3xl mx-auto text-center">
+          <p class="font-script text-2xl text-creme mb-2">Se retrouver, ensemble</p>
+          <h1 class="text-4xl sm:text-5xl font-light text-creme">Agenda</h1>
+          <p class="mt-5 text-creme/90 leading-relaxed">
+            Retrouvez tous les ateliers proposés et réservez directement votre créneau
+            via l'agenda partagé ci-dessous.
+          </p>
         </div>
       </section>
 
-      <section aria-labelledby="episodes-title" class="relative py-16 px-6">
-        <div class="max-w-6xl mx-auto">
-          <h2 id="episodes-title" class="sr-only">Épisodes</h2>
+      <section aria-labelledby="categories-title" class="relative py-10 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 id="categories-title" class="sr-only">Types d'ateliers</h2>
+          <ul class="reveal-stagger flex flex-wrap justify-center gap-3">
+            <li class="sticker clay-btn px-5 py-2.5 text-sm font-medium bg-terracotta-dark text-creme">Ateliers découverte PNL</li>
+            <li class="sticker-alt clay-btn px-5 py-2.5 text-sm font-medium bg-olive text-creme">Coaching collectif entreprise</li>
+            <li class="sticker clay-btn px-5 py-2.5 text-sm font-medium bg-lavande text-creme">Cercles de parole</li>
+            <li class="sticker-alt clay-btn px-5 py-2.5 text-sm font-medium bg-terracotta text-creme">Hypnose &amp; ressources</li>
+          </ul>
+        </div>
+      </section>
 
+      <section aria-labelledby="agenda-title" class="relative py-10 px-6">
+        <div class="max-w-5xl mx-auto">
+          <h2 id="agenda-title" class="sr-only">Agenda</h2>
           <!--
-            Emplacements d'épisodes : src doit être au format https://www.youtube.com/embed/VIDEO_ID
-            (Partager > Intégrer sur YouTube) — pas l'URL de la page /watch, que YouTube refuse
-            d'afficher en iframe ("n'autorise pas la connexion"). Mettre à jour titre/description
-            une fois l'épisode définitif.
+            Remplacer le src ci-dessous par le lien d'intégration ("Publier") de votre Google
+            Agenda : Paramètres de l'agenda > Intégrer l'agenda > coller l'URL src de l'iframe.
           -->
-          <div class="reveal-stagger grid md:grid-cols-2 gap-10">
-            <article class="space-y-4">
-              <div class="overflow-hidden border-4 border-olive/30 shadow-lg rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-xl rounded-bl-xl">
-                <div class="aspect-video bg-olive-dark/90 flex items-center justify-center">
-                  <div
-                    data-consent-embed
-                    data-embed-src="https://www.youtube.com/embed/FYGTT7YhywA"
-                    data-embed-title="Épisode. Du point A au point B"
-                    data-embed-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    class="w-full h-full"
-                  >
-                    <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-creme/80 text-center px-6">
-                      <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z" /></svg>
-                      <p class="text-xs leading-relaxed max-w-[220px]">Ce contenu dépose des cookies YouTube au chargement.</p>
-                      <button type="button" data-consent-embed-allow class="clay-btn bg-terracotta text-creme text-xs px-4 py-2 font-medium hover:bg-terracotta-dark transition-colors">
-                        Activer la vidéo
-                      </button>
-                    </div>
-                  </div>
+          <div class="reveal rounded-2xl overflow-hidden border-4 border-sable shadow-2xl bg-creme">
+            <div class="relative w-full" style="padding-bottom: 85%;">
+              <div
+                data-consent-embed
+                data-embed-src="https://calendar.google.com/calendar/embed?src=isabelle.courias%40iac-ressources.com&ctz=Europe%2FParis"
+                data-embed-title="Agenda des ateliers I.A.C Ressources"
+                class="absolute top-0 left-0 w-full h-full"
+              >
+                <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-black/70 text-center px-6 bg-sable/20">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 7V3m8 4V3M4 11h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z" /></svg>
+                  <p class="text-xs leading-relaxed max-w-[240px]">Ce contenu dépose des cookies Google Agenda au chargement.</p>
+                  <button type="button" data-consent-embed-allow class="clay-btn bg-terracotta text-creme text-xs px-4 py-2 font-medium hover:bg-terracotta-dark transition-colors">
+                    Activer l'agenda
+                  </button>
                 </div>
               </div>
-              <h3 class="font-script text-2xl text-olive-dark">Épisode....</h3>
-              <p class="text-sm text-black/80">
-                Un invité revient sur le tournant de son parcours : la décision, le doute,
-                puis le pas franchi.
-              </p>
-            </article>
-
-            <article class="space-y-4">
-              <div class="overflow-hidden border-4 border-olive/30 shadow-lg rounded-tr-[4rem] rounded-bl-[4rem] rounded-tl-xl rounded-br-xl">
-                <div class="aspect-video bg-olive-dark/90 flex items-center justify-center">
-                  <div
-                    data-consent-embed
-                    data-embed-src="https://www.youtube.com/embed/16y1AkoZkmQ"
-                    data-embed-title=" petit classique"
-                    data-embed-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    class="w-full h-full"
-                  >
-                    <div class="w-full h-full flex flex-col items-center justify-center gap-3 text-creme/80 text-center px-6">
-                      <svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z" /></svg>
-                      <p class="text-xs leading-relaxed max-w-[220px]">Ce contenu dépose des cookies YouTube au chargement.</p>
-                      <button type="button" data-consent-embed-allow class="clay-btn bg-terracotta text-creme text-xs px-4 py-2 font-medium hover:bg-terracotta-dark transition-colors">
-                        Activer la vidéo
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h3 class="font-script text-2xl text-olive-dark">titre...</h3>
-              <p class="text-sm text-black/80">
-                Un parcours de reconversion raconté avec ses mots à soi, pour éclairer
-                ceux qui hésitent encore.
-              </p>
-            </article>
+            </div>
           </div>
 
-          <div class="reveal mt-10 clay-soft border-2 border-dashed border-sable-dark bg-white/50 px-8 py-8 text-center">
-            <p class="text-black/60 italic">D'autres épisodes arrivent bientôt.</p>
-          </div>
+          <p class="reveal text-center mt-10">
+            <a href="reservation.html" class="clay-btn inline-block bg-terracotta text-creme px-8 py-3.5 font-medium tracking-wide hover:bg-terracotta-dark hover:-rotate-1 hover:scale-105 transition-all duration-300 shadow-lg shadow-terracotta/20">
+              Formulaire de contact
+            </a>
+          </p>
         </div>
       </section>
 
-      <section aria-labelledby="podcast-cta-title" class="relative py-20 px-6">
-        <div class="reveal max-w-4xl mx-auto text-center clay bg-gradient-to-br from-olive/20 to-olive/8 border border-olive/30 px-8 py-14">
-          <h2 id="podcast-cta-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Envie de témoigner à votre tour ?</h2>
-          <p class="mt-4 text-black/80 max-w-xl mx-auto">
-            Si votre parcours a un fil rouge à partager, écrivez-moi, je serais ravie
-            de vous recevoir en épisode.
-          </p>
-          <a href="reservation.html" class="mt-8 inline-block clay-btn bg-terracotta text-creme px-8 py-3.5 font-medium tracking-wide hover:bg-terracotta-dark hover:-rotate-1 hover:scale-105 transition-all duration-300 shadow-lg shadow-terracotta/20">
-            Me contacter
-          </a>
+      <section aria-labelledby="pratique-title" class="relative py-16 px-6 bg-terracotta/30">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="reveal">
+            <h2 id="pratique-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark">Bon à savoir</h2>
+            <div class="reveal-stagger mt-8 grid sm:grid-cols-3 gap-6 text-left">
+              <div class="clay bg-white/70 border border-sable p-6">
+                <p class="text-sm font-semibold text-olive-dark mb-1">Format</p>
+                <p class="text-sm text-black/75">En individuel ou en petit groupe, selon l'atelier.</p>
+              </div>
+              <div class="clay-alt bg-white/70 border border-sable p-6">
+                <p class="text-sm font-semibold text-olive-dark mb-1">Lieu</p>
+                <p class="text-sm text-black/75">En cabinet (Saint-Rémy-de-Provence, Tarascon) ou à distance.</p>
+              </div>
+              <div class="clay bg-white/70 border border-sable p-6">
+                <p class="text-sm font-semibold text-olive-dark mb-1">Inscription</p>
+                <p class="text-sm text-black/75">Via l'agenda ci-dessus ou le formulaire de contact.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
