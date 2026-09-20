@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+  /* Réservation : pré-remplissage depuis une fiche atelier/formation (?sujet=...) */
+  const bookingForm = document.getElementById('bookingForm');
+  const sujet = new URLSearchParams(window.location.search).get('sujet');
+  if (bookingForm && sujet) {
+    const radio = document.getElementById('ateliers');
+    const message = document.getElementById('message');
+    if (radio) radio.checked = true;
+    if (message && !message.value) message.value = `Je souhaite m'inscrire à : ${sujet.slice(0, 120)}`;
+  }
   /* Année courante dans le footer */
   document.querySelectorAll('[data-year]').forEach((el) => {
     el.textContent = new Date().getFullYear();
