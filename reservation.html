@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="font-sans text-black antialiased">
+<body class="font-sans text-black antialiased" data-cms-file="content/pages/liens.json">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
   Aller au contenu principal
@@ -78,6 +78,7 @@
     <form
       id="bookingForm"
       action="https://formspree.io/f/mnpnajaq"
+      data-cms-attr="action:https://formspree.io/f/{formspree_reservation}"
       method="POST"
       class="reveal clay-soft bg-white/80 border border-sable shadow-xl p-8 sm:p-10 space-y-7"
     >
@@ -201,6 +202,7 @@
   <p class="text-center text-xs text-creme/50 mt-12">© <span data-year></span> I.A.C Ressources. Tous droits réservés. · <a href="mentions-legales.html" class="underline hover:text-creme/80 transition-colors">Mentions légales</a> · <a href="confidentialite.html" class="underline hover:text-creme/80 transition-colors">Confidentialité</a> · <button type="button" data-cookie-settings class="underline hover:text-creme/80 transition-colors">Gérer les cookies</button></p>
 </footer>
 
+<script src="assets/js/content-loader.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/cookies.js" defer></script>
 </body>

@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="font-sans text-black antialiased" style="overflow-x: clip;">
+<body class="font-sans text-black antialiased" style="overflow-x: clip;" data-cms-file="content/pages/liens.json">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
   Aller au contenu principal
@@ -115,6 +115,7 @@
               <div
                 data-consent-embed
                 data-embed-src="https://calendar.google.com/calendar/embed?src=isabelle.courias%40iac-ressources.com&ctz=Europe%2FParis"
+                data-cms-attr="data-embed-src:https://calendar.google.com/calendar/embed?src={agenda_email}&ctz=Europe%2FParis"
                 data-embed-title="Agenda des ateliers I.A.C Ressources"
                 class="absolute top-0 left-0 w-full h-full"
               >
@@ -186,6 +187,7 @@
   </div>
 </div>
 
+<script src="assets/js/content-loader.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/cookies.js" defer></script>
 <script src="assets/js/ribbon.js" defer></script>

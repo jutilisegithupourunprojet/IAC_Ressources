@@ -1,0 +1,95 @@
+backend:
+  name: github
+  repo: jutilisegithupourunprojet/IAC_Ressources
+  branch: main
+  # Adresse du site en ligne (à corriger si le nom de domaine change).
+  base_url: https://iac-ressources.vercel.app
+  auth_endpoint: api/auth
+
+# Les images ajoutées depuis l'éditeur sont rangées ici.
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+locale: "fr"
+
+collections:
+  - name: pages
+    label: "Textes des pages"
+    files:
+      - name: accueil
+        label: "Page d'accueil"
+        file: content/pages/accueil.json
+        fields:
+          - { label: "Phrase d'accroche (au-dessus du titre)", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+          - { label: "Ligne des métiers (sous l'introduction)", name: metiers, widget: string }
+          - { label: "Titre de la section « Ateliers & Formations »", name: teaser_titre, widget: string }
+          - { label: "Texte de la section « Ateliers & Formations »", name: teaser_texte, widget: text }
+
+      - name: apropos
+        label: "À propos"
+        file: content/pages/apropos.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+          - { label: "Citation", name: citation, widget: string }
+
+      - name: outils
+        label: "Mes outils"
+        file: content/pages/outils.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+
+      - name: podcasts
+        label: Podcasts
+        file: content/pages/podcasts.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+          - { label: "Épisode 1 — titre", name: ep1_titre, widget: string }
+          - { label: "Épisode 1 — identifiant vidéo YouTube", name: ep1_id, widget: string, hint: "Les 11 caractères après watch?v= dans l'adresse YouTube." }
+          - { label: "Épisode 1 — description", name: ep1_description, widget: text }
+          - { label: "Épisode 2 — titre", name: ep2_titre, widget: string }
+          - { label: "Épisode 2 — identifiant vidéo YouTube", name: ep2_id, widget: string }
+          - { label: "Épisode 2 — description", name: ep2_description, widget: text }
+
+      - name: agenda_liens
+        label: "Agenda et formulaires"
+        file: content/pages/liens.json
+        fields:
+          - { label: "Adresse e-mail de l'agenda Google", name: agenda_email, widget: string, hint: "Google Agenda > Paramètres > Intégrer l'agenda, la partie src= de l'adresse." }
+          - { label: "Identifiant du formulaire de réservation", name: formspree_reservation, widget: string, hint: "La partie après formspree.io/f/" }
+          - { label: "Identifiant du formulaire du blog", name: formspree_blog, widget: string }
+
+  - name: formations
+    label: "Ateliers & Formations"
+    files:
+      - name: voyage_du_heros
+        label: "Le voyage du héros"
+        file: content/formations/voyage-du-heros.json
+        fields:
+          - { label: "Titre", name: titre, widget: string }
+          - { label: "Sous-titre", name: sous_titre, widget: string }
+          - { label: "Badge (ex. Formation · 2 jours · 12 heures)", name: badge, widget: string }
+          - { label: "Photo de couverture", name: image, widget: image, required: false }
+          - { label: "Texte d'introduction", name: intro, widget: text }
+          - { label: "Méthodes pédagogiques", name: methodes, widget: markdown }
+          - { label: "Conclusion", name: conclusion, widget: text }
+          - { label: "Prochaines dates", name: dates, widget: string }
+          - { label: Lieu, name: lieu, widget: string }
+          - { label: Tarif, name: tarif, widget: string }
+          - { label: Public, name: public_vise, widget: string }
+          - { label: Prérequis, name: prerequis, widget: string }
+
+  - name: blog
+    label: "Articles du blog"
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Titre, name: title, widget: string }
+      - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Résumé (affiché dans la liste)", name: excerpt, widget: text }
+      - { label: Image, name: image, widget: image, required: false }
+      - { label: "Contenu de l'article", name: body, widget: markdown }
