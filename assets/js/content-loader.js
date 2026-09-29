@@ -42,8 +42,13 @@ window.iacMarkdownLite = function markdownLite(src) {
         const items = lines.map((l) => `<li>${inline(l.replace(/^[-*]\s+/, ''))}</li>`).join('');
         return `<ul class="list-disc pl-5 space-y-1">${items}</ul>`;
       }
-      const heading = block.match(/^#{1,3}\s+(.*)$/);
-      if (heading) return `<p class="font-semibold">${inline(heading[1])}</p>`;
+      const heading = block.match(/^(#{1,3})\s+(.*)$/);
+      if (heading) {
+        const level = heading[1].length;
+        if (level === 1) return `<h2 class="mt-2 text-2xl sm:text-3xl font-bold text-terracotta-dark">${inline(heading[2])}</h2>`;
+        if (level === 2) return `<h3 class="mt-2 text-xl sm:text-2xl font-bold text-terracotta-dark">${inline(heading[2])}</h3>`;
+        return `<h4 class="mt-2 font-semibold text-olive-dark">${inline(heading[2])}</h4>`;
+      }
       return `<p>${inline(block)}</p>`;
     })
     .join('');
