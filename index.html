@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="font-sans text-black antialiased" style="overflow-x: clip;">
+<body class="font-sans text-black antialiased" style="overflow-x: clip;" data-cms-file="content/pages/accueil.json">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
   Aller au contenu principal
@@ -135,16 +135,16 @@
 
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
           <div class="reveal">
-            <p class="font-script text-2xl text-terracotta mb-2">Le poids et le sens des mots</p>
+            <p class="font-script text-2xl text-terracotta mb-2" data-cms="kicker">Le poids et le sens des mots</p>
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-light leading-[1.1] text-olive-dark">
               Retrouver le fil de <span class="font-script text-terracotta-dark text-5xl sm:text-6xl lg:text-7xl">Mon</span> histoire
             </h1>
-            <p class="mt-6 text-lg text-black/80 max-w-md">
+            <p class="mt-6 text-lg text-black/80 max-w-md" data-cms="intro">
               Je vous accompagne pour explorer vos ressources
               intérieures, revisiter votre parcours de vie et avancer, mot après mot,
               vers ce qui a du sens pour vous.
             </p>
-            <p class="mt-4 text-sm font-medium text-black/70">
+            <p class="mt-4 text-sm font-medium text-black/70" data-cms="metiers">
               Psycho-praticienne · Formatrice PNL · Coach d'entreprise certifiée RNCP
             </p>
             <div class="mt-8 flex flex-wrap gap-4">
@@ -339,8 +339,8 @@
 
         <div class="relative max-w-5xl mx-auto text-center">
           <div class="reveal">
-            <h2 id="ateliers-teaser-title" class="font-script text-4xl sm:text-5xl text-terracotta-dark">Ateliers &amp; Formations</h2>
-            <p class="mt-4 text-black/70 max-w-2xl mx-auto">
+            <h2 id="ateliers-teaser-title" class="font-script text-4xl sm:text-5xl text-terracotta-dark" data-cms="teaser_titre">Ateliers &amp; Formations</h2>
+            <p class="mt-4 text-black/70 max-w-2xl mx-auto" data-cms="teaser_texte">
               Découvrez les ateliers et formations proposés, avec leur programme détaillé.
             </p>
           </div>
@@ -434,6 +434,7 @@
   </div>
 </div>
 
+<script src="assets/js/content-loader.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/cookies.js" defer></script>
 <script src="assets/js/ribbon.js" defer></script>

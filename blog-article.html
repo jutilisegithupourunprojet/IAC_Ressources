@@ -3,15 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blog. I.A.C Ressources</title>
-<meta name="description" content="Le blog d'Isabelle André Courias : réflexions et ressources autour de la psycho-pratique, la PNL et le coaching. Premiers articles bientôt en ligne." />
-<link rel="canonical" href="blog.html" />
+<title>Article. Blog. I.A.C Ressources</title>
+<meta name="description" content="Un article du blog d'Isabelle André Courias : réflexions et ressources autour de la psycho-pratique, la PNL et le coaching." />
 <link rel="icon" href="IAC_logo_V2-removebg-preview.png" type="image/png" />
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
 <meta property="og:locale" content="fr_FR" />
-<meta property="og:title" content="Blog. I.A.C Ressources" />
-<meta property="og:description" content="Réflexions et ressources autour de la psycho-pratique, la PNL et le coaching." />
 <meta property="og:image" content="Isabelle.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="font-sans text-black antialiased" data-cms-file="content/pages/liens.json">
+<body class="font-sans text-black antialiased">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
   Aller au contenu principal
@@ -37,7 +34,7 @@
       <li><a href="outils.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Mes outils</a></li>
       <li><a href="podcasts.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Podcasts</a></li>
       <li><a href="ateliers-formations.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Ateliers &amp; Formations</a></li>
-          <li><a href="agenda.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Agenda</a></li>
+      <li><a href="agenda.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Agenda</a></li>
       <li><a href="apropos.html" data-nav-link class="hover:text-terracotta transition-all duration-300">À propos</a></li>
       <li><a href="blog.html" data-nav-link class="hover:text-terracotta transition-all duration-300">Blog</a></li>
     </ul>
@@ -57,7 +54,7 @@
     <li><a href="outils.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Mes outils</a></li>
     <li><a href="podcasts.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Podcasts</a></li>
     <li><a href="ateliers-formations.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Ateliers &amp; Formations</a></li>
-        <li><a href="agenda.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Agenda</a></li>
+    <li><a href="agenda.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Agenda</a></li>
     <li><a href="apropos.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">À propos</a></li>
     <li><a href="blog.html" data-nav-link class="block py-2 text-olive-dark hover:text-terracotta transition-colors">Blog</a></li>
     <li><a href="reservation.html" class="block mt-2 clay-btn bg-terracotta text-creme text-center py-2.5 font-medium">Réservation</a></li>
@@ -66,46 +63,26 @@
 </header>
 
 <main id="main" class="px-6 pt-32 sm:pt-40 pb-24">
-  <div class="max-w-3xl mx-auto text-center">
-    <p class="reveal font-script text-2xl text-terracotta mb-2">Le fil des mots</p>
-    <h1 class="reveal text-4xl sm:text-5xl font-light text-olive-dark">Blog</h1>
-    <p class="reveal mt-5 text-black/80 leading-relaxed max-w-xl mx-auto">
-      Des réflexions et des ressources autour de la psycho-pratique, la PNL, le
-      coaching et le sens des mots.
-    </p>
+
+  <article id="blog-article" hidden class="max-w-2xl mx-auto">
+    <a href="blog.html" class="inline-flex items-center gap-2 text-sm text-black/70 hover:text-terracotta-dark transition-colors"><span aria-hidden="true">←</span> Blog</a>
+
+    <p id="blog-article-date" class="mt-6 text-xs uppercase tracking-widest text-terracotta-dark/70"></p>
+    <h1 id="blog-article-title" class="mt-2 text-4xl sm:text-5xl font-light text-olive-dark"></h1>
+
+    <img id="blog-article-image" hidden alt="" class="mt-8 w-full rounded-2xl clay-soft object-cover max-h-96 shadow-lg" />
+
+    <div id="blog-article-body" class="mt-8 space-y-4 text-black/85 leading-relaxed"></div>
+  </article>
+
+  <div id="blog-article-not-found" hidden class="max-w-xl mx-auto text-center">
+    <p class="font-script text-2xl text-terracotta mb-2">Page introuvable</p>
+    <h1 class="text-3xl sm:text-4xl font-light text-olive-dark">Cet article n'existe pas ou plus</h1>
+    <a href="blog.html" class="mt-8 inline-block clay-btn bg-terracotta text-creme px-6 py-3 font-medium tracking-wide hover:bg-terracotta-dark transition-all duration-300 shadow-md shadow-terracotta/20">
+      Retour au blog
+    </a>
   </div>
 
-  <ul id="blog-grid" hidden class="reveal-stagger mt-14 max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3 text-left"></ul>
-
-  <div class="max-w-3xl mx-auto text-center">
-    <div id="blog-empty" class="reveal clay-soft mt-12 border-2 border-dashed border-sable-dark bg-white/50 px-8 py-14">
-      <div class="mx-auto w-14 h-14 clay-btn bg-ocre/20 flex items-center justify-center mb-5">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4AA8B7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z" /></svg>
-      </div>
-      <p class="text-black/70 italic mb-6">Aucun article publié pour l'instant.</p>
-
-      <form action="https://formspree.io/f/mnpnajaq" data-cms-attr="action:https://formspree.io/f/{formspree_blog}" method="POST" class="max-w-md mx-auto">
-        <input type="hidden" name="_subject" value="Nouvelle inscription — être prévenu(e) des articles du blog" />
-        <div class="flex flex-col sm:flex-row gap-3">
-          <label for="blog-email" class="sr-only">Adresse email</label>
-          <input
-            type="email" id="blog-email" name="email" required placeholder="votre@email.com"
-            class="flex-1 px-4 py-3 rounded-xl border border-sable bg-creme/60 focus:outline-none focus:ring-2 focus:ring-ocre focus:border-ocre transition-all duration-300"
-          />
-          <button type="submit" class="clay-btn bg-terracotta text-creme px-6 py-3 font-medium tracking-wide hover:bg-terracotta-dark transition-all duration-300 shadow-md shadow-terracotta/20 whitespace-nowrap">
-            Me prévenir
-          </button>
-        </div>
-        <div class="flex items-start gap-2 mt-3 text-left">
-          <input type="checkbox" id="blog-consent" name="consent" required class="mt-1 w-4 h-4 shrink-0 accent-terracotta" />
-          <label for="blog-consent" class="text-xs text-black/60">
-            J'accepte de recevoir un e-mail lors de la publication de nouveaux articles, conformément à la
-            <a href="confidentialite.html" class="underline hover:text-terracotta-dark transition-colors">politique de confidentialité</a>.
-          </label>
-        </div>
-      </form>
-    </div>
-  </div>
 </main>
 
 <footer class="relative bg-gradient-to-br from-olive-dark to-terracotta-dark text-creme py-16 px-6">

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "Site I.A.C Ressources — Isabelle André Courias",
   "scripts": {
+    "build": "node scripts/build-blog-index.js && npm run build:css",
     "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
+    "build:blog": "node scripts/build-blog-index.js",
     "watch:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
     "start": "http-server -p 8123"
   },

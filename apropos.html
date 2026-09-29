@@ -19,7 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="font-sans text-black antialiased" style="overflow-x: clip;">
+<body class="font-sans text-black antialiased" style="overflow-x: clip;" data-cms-file="content/pages/apropos.json">
 
 <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:bg-terracotta focus:text-creme focus:px-4 focus:py-2 focus:rounded-lg">
   Aller au contenu principal
@@ -87,9 +87,9 @@
             <img src="Isabelle.png" alt="Portrait d'Isabelle André Courias" class="w-full h-full object-cover" />
           </div>
           <div class="reveal text-center md:text-left">
-            <p class="font-script text-2xl text-terracotta mb-2">Mon parcours</p>
+            <p class="font-script text-2xl text-terracotta mb-2" data-cms="kicker">Mon parcours</p>
             <h1 class="text-4xl sm:text-5xl font-light text-olive-dark">À propos</h1>
-            <p class="mt-5 text-black/80 leading-relaxed max-w-xl">
+            <p class="mt-5 text-black/80 leading-relaxed max-w-xl" data-cms="intro">
               De la communication d'entreprise à l'accompagnement des personnes : un même
               métier, celui des mots justes.
             </p>
@@ -101,7 +101,7 @@
         <div class="reveal max-w-3xl mx-auto clay bg-lavande-light/30 p-10 border border-lavande/30 text-center">
           <h2 id="citation-title" class="sr-only">Citation</h2>
           <blockquote class="font-script text-2xl sm:text-3xl text-olive-dark leading-relaxed">
-            « Citation ou quelque chose qui te défini ?»
+            «&nbsp;<span data-cms="citation">Citation ou quelque chose qui te défini ?</span>&nbsp;»
           </blockquote>
           <p class="mt-4 text-sm text-black/70">Isabelle André Courias</p>
         </div>
@@ -234,6 +234,7 @@
   </div>
 </div>
 
+<script src="assets/js/content-loader.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/cookies.js" defer></script>
 <script src="assets/js/ribbon.js" defer></script>
