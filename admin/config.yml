@@ -40,6 +40,40 @@ collections:
         fields:
           - { label: "Phrase d'accroche", name: kicker, widget: string }
           - { label: "Paragraphe d'introduction", name: intro, widget: text }
+          - label: "Outil 1 — Psycho-praticienne"
+            name: outil1
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - { label: "4 points clés", name: points, widget: list, min: 4, max: 4 }
+          - label: "Outil 2 — Formation PNL"
+            name: outil2
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - { label: "4 points clés", name: points, widget: list, min: 4, max: 4 }
+          - label: "Outil 3 — Coaching d'entreprise"
+            name: outil3
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - { label: "4 points clés", name: points, widget: list, min: 4, max: 4 }
+          - label: "Outil 4 — Hypnose Éricksonienne"
+            name: outil4
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - { label: "4 points clés", name: points, widget: list, min: 4, max: 4 }
+          - { label: "Titre du bandeau final", name: cta_titre, widget: string }
+          - { label: "Texte du bandeau final", name: cta_texte, widget: text }
 
       - name: podcasts
         label: Podcasts

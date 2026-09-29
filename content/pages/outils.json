@@ -1,4 +1,46 @@
 {
   "kicker": "Comment j'accompagne",
-  "intro": "Mon parcours m'a amenée à me former à des domaines très variés. Aujourd'hui, je m'appuie sur ces quatre approches pour vous accompagner à votre rythme, dans votre vie personnelle comme professionnelle."
+  "intro": "Mon parcours m'a amenée à me former à des domaines très variés. Aujourd'hui, je m'appuie sur ces quatre approches pour vous accompagner à votre rythme, dans votre vie personnelle comme professionnelle.",
+  "outil1": {
+    "titre": "Psycho-praticienne",
+    "texte": "Un espace d'écoute pour explorer votre histoire, comprendre vos schémas et retrouver vos propres ressources. Que ce soient les mots que l'on se dit ou ceux que l'on transporte dans nos échanges, ils déterminent souvent les réussites ou les incompréhensions. C'est ce fil que l'on tire ensemble.",
+    "points": [
+      "Mieux comprendre vos schémas répétitifs",
+      "Retrouver vos propres ressources",
+      "Un accompagnement à votre rythme",
+      "Un espace confidentiel, sans jugement"
+    ]
+  },
+  "outil2": {
+    "titre": "Formation PNL",
+    "texte": "Enseignante en Programmation Neuro-Linguistique, Isabelle transmet des outils concrets pour comprendre comment vous fonctionnez et changer, pas à pas, ce qui ne vous convient plus. En individuel ou lors des ateliers découverte proposés régulièrement.",
+    "points": [
+      "Des outils concrets, applicables immédiatement",
+      "Ateliers découverte et formations approfondies",
+      "Une approche pas à pas, du point A au point B",
+      "Individuel ou en petit groupe"
+    ]
+  },
+  "outil3": {
+    "titre": "Coaching d'entreprise",
+    "texte": "Issue du monde de la communication d'entreprise. Chef de Publicité puis Directrice de la Communication. Isabelle propose des interventions sur mesure : communication interne, cohésion d'équipe et accompagnement du changement, avec la même exigence du langage qui a construit sa carrière.",
+    "points": [
+      "Communication interne & cohésion d'équipe",
+      "Accompagnement du changement",
+      "Coaching individuel de dirigeants et managers",
+      "Interventions sur mesure, en entreprise"
+    ]
+  },
+  "outil4": {
+    "titre": "Hypnose Éricksonienne",
+    "texte": "En complément du travail conscient d'introspection, l'hypnose Éricksonienne permet de mobiliser en douceur vos ressources inconscientes. Particulièrement utile face au stress, aux blocages ou pour préparer une étape importante.",
+    "points": [
+      "Une approche douce et respectueuse",
+      "Utile face au stress et aux blocages",
+      "En complément d'un suivi en cours",
+      "Pour préparer une étape importante"
+    ]
+  },
+  "cta_titre": "Un outil vous parle particulièrement ?",
+  "cta_texte": "Parlons-en ensemble lors d'un premier échange, pour choisir ce qui vous correspond le mieux aujourd'hui."
 }

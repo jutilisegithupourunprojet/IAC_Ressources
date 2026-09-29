@@ -6,7 +6,8 @@
  * peut porter son propre `data-cms-file` pour piocher dans un autre fichier
  * (ex. une vignette qui affiche le contenu d'une fiche formation).
  *
- * - data-cms="cle"       : remplace le texte de l'élément
+ * - data-cms="cle"       : remplace le texte de l'élément (accepte un chemin du
+ *   type "outil1.titre" ou "outil1.points.0" pour un champ imbriqué / une liste)
  * - data-cms-md="cle"    : convertit un texte Markdown simple (gras, italique, liens,
  *   listes à puces, paragraphes) en HTML et remplace le contenu de l'élément
  * - data-cms-attr="attribut:cle;attribut2:cle2" : pose un ou plusieurs attributs
@@ -70,6 +71,11 @@ window.iacMarkdownLite = function markdownLite(src) {
 };
 
 (() => {
+  const getPath = (data, path) =>
+    path
+      .split('.')
+      .reduce((acc, key) => (acc == null ? acc : acc[key]), data);
+
   const fileCache = new Map();
   const loadFile = (file) => {
     if (!fileCache.has(file)) {
@@ -99,7 +105,7 @@ window.iacMarkdownLite = function markdownLite(src) {
   document.querySelectorAll('[data-cms]').forEach((el) => {
     const key = el.getAttribute('data-cms');
     run(el, (data) => {
-      const value = data[key];
+      const value = getPath(data, key);
       if (value != null && value !== '') el.textContent = value;
     });
   });
@@ -107,7 +113,7 @@ window.iacMarkdownLite = function markdownLite(src) {
   document.querySelectorAll('[data-cms-md]').forEach((el) => {
     const key = el.getAttribute('data-cms-md');
     run(el, (data) => {
-      const value = data[key];
+      const value = getPath(data, key);
       if (value != null && value !== '') el.innerHTML = window.iacMarkdownLite(value);
     });
   });
@@ -128,14 +134,14 @@ window.iacMarkdownLite = function markdownLite(src) {
         if (!attr || !template) return;
 
         if (!template.includes('{')) {
-          const value = data[template];
+          const value = getPath(data, template);
           if (value != null && value !== '') el.setAttribute(attr, value);
           return;
         }
 
         let hasValue = false;
-        const value = template.replace(/\{(\w+)\}/g, (_, key) => {
-          const v = data[key];
+        const value = template.replace(/\{([\w.]+)\}/g, (_, key) => {
+          const v = getPath(data, key);
           if (v != null && v !== '') {
             hasValue = true;
             return encodeURIComponent(v);
