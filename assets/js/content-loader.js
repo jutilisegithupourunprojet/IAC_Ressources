@@ -38,18 +38,33 @@ window.iacMarkdownLite = function markdownLite(src) {
   return blocks
     .map((block) => {
       const lines = block.split('\n').map((l) => l.trim());
+
       if (lines.every((l) => /^[-*]\s+/.test(l))) {
         const items = lines.map((l) => `<li>${inline(l.replace(/^[-*]\s+/, ''))}</li>`).join('');
-        return `<ul class="list-disc pl-5 space-y-1">${items}</ul>`;
+        return `<ul class="list-disc pl-5 space-y-2 marker:text-terracotta">${items}</ul>`;
       }
-      const heading = block.match(/^(#{1,3})\s+(.*)$/);
+
+      if (lines.every((l) => /^>\s?/.test(l))) {
+        const text = lines.map((l) => l.replace(/^>\s?/, '')).join('\n');
+        return `<div class="not-italic border-l-4 border-olive bg-olive/10 rounded-r-xl px-5 py-3 font-medium text-olive-dark">${inline(text)}</div>`;
+      }
+
+      const heading = block.match(/^(#{1,4})\s+(.*)$/);
       if (heading) {
         const level = heading[1].length;
-        if (level === 1) return `<h2 class="mt-2 text-2xl sm:text-3xl font-bold text-terracotta-dark">${inline(heading[2])}</h2>`;
-        if (level === 2) return `<h3 class="mt-2 text-xl sm:text-2xl font-bold text-terracotta-dark">${inline(heading[2])}</h3>`;
-        return `<h4 class="mt-2 font-semibold text-olive-dark">${inline(heading[2])}</h4>`;
+        if (level === 1) {
+          return `<h2 class="mt-12 first:mt-0 text-center text-3xl sm:text-4xl font-bold text-terracotta-dark"><span class="inline-block pb-3 border-b-4 border-corail/60">${inline(heading[2])}</span></h2>`;
+        }
+        if (level === 2) {
+          return `<h3 class="mt-10 flex items-center gap-3 text-2xl sm:text-3xl font-bold text-olive-dark"><span class="h-7 w-1.5 rounded-full bg-terracotta shrink-0" aria-hidden="true"></span>${inline(heading[2])}</h3>`;
+        }
+        if (level === 3) {
+          return `<h4 class="mt-6 text-lg sm:text-xl font-semibold text-terracotta-dark">${inline(heading[2])}</h4>`;
+        }
+        return `<p class="mt-4 text-xs font-bold uppercase tracking-widest text-black/50">${inline(heading[2])}</p>`;
       }
-      return `<p>${inline(block)}</p>`;
+
+      return `<p class="text-base sm:text-[1.05rem] leading-relaxed">${inline(block)}</p>`;
     })
     .join('');
 };
