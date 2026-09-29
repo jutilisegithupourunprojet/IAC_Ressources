@@ -77,7 +77,7 @@ collections:
       - { label: Tarif, name: tarif, widget: string, required: false }
       - { label: Public, name: public_vise, widget: string, required: false }
       - { label: Prérequis, name: prerequis, widget: string, required: false }
-      - { label: "Présentation complète", name: body, widget: markdown, hint: "Utilisez les titres (##, ###) pour structurer : introduction, programme, méthodes, conclusion…" }
+      - { label: "Présentation complète", name: body, widget: markdown, hint: "# pour un grand titre centré (une grande partie : introduction, programme, méthodes…), ## pour une sous-partie (ex. Jour 1), ### pour un petit intitulé (ex. Matin), > pour encadrer un objectif important." }
 
   - name: blog
     label: "Articles du blog"
@@ -89,4 +89,4 @@ collections:
       - { label: Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
       - { label: "Résumé (affiché dans la liste)", name: excerpt, widget: text }
       - { label: Image, name: image, widget: image, required: false }
-      - { label: "Contenu de l'article", name: body, widget: markdown }
+      - { label: "Contenu de l'article", name: body, widget: markdown, hint: "# pour un grand titre centré, ## pour une sous-partie, ### pour un petit intitulé, > pour encadrer un passage important." }
