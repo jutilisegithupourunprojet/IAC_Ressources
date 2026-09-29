@@ -64,23 +64,20 @@ collections:
 
   - name: formations
     label: "Ateliers & Formations"
-    files:
-      - name: voyage_du_heros
-        label: "Le voyage du héros"
-        file: content/formations/voyage-du-heros.json
-        fields:
-          - { label: "Titre", name: titre, widget: string }
-          - { label: "Sous-titre", name: sous_titre, widget: string }
-          - { label: "Badge (ex. Formation · 2 jours · 12 heures)", name: badge, widget: string }
-          - { label: "Photo de couverture", name: image, widget: image, required: false }
-          - { label: "Texte d'introduction", name: intro, widget: text }
-          - { label: "Méthodes pédagogiques", name: methodes, widget: markdown }
-          - { label: "Conclusion", name: conclusion, widget: text }
-          - { label: "Prochaines dates", name: dates, widget: string }
-          - { label: Lieu, name: lieu, widget: string }
-          - { label: Tarif, name: tarif, widget: string }
-          - { label: Public, name: public_vise, widget: string }
-          - { label: Prérequis, name: prerequis, widget: string }
+    folder: content/formations
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: titre, widget: string }
+      - { label: "Sous-titre", name: sous_titre, widget: string }
+      - { label: "Badge (ex. Formation · 2 jours · 12 heures, ou Atelier · demi-journée)", name: badge, widget: string }
+      - { label: "Photo de couverture", name: image, widget: image, required: false }
+      - { label: "Prochaines dates", name: dates, widget: string, required: false }
+      - { label: Lieu, name: lieu, widget: string, required: false }
+      - { label: Tarif, name: tarif, widget: string, required: false }
+      - { label: Public, name: public_vise, widget: string, required: false }
+      - { label: Prérequis, name: prerequis, widget: string, required: false }
+      - { label: "Présentation complète", name: body, widget: markdown, hint: "Utilisez les titres (##, ###) pour structurer : introduction, programme, méthodes, conclusion…" }
 
   - name: blog
     label: "Articles du blog"

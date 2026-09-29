@@ -1,1 +1,1 @@
-{"outputDirectory": ".", "redirects": [{"source": "/ateliers.html", "destination": "/agenda.html", "permanent": true}]}
+{"outputDirectory": ".", "redirects": [{"source": "/ateliers.html", "destination": "/agenda.html", "permanent": true}, {"source": "/formation-voyage-du-heros.html", "destination": "/formation.html?formation=le-voyage-du-heros", "permanent": true}]}
