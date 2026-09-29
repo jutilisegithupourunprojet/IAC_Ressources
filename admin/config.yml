@@ -3,7 +3,7 @@ backend:
   repo: jutilisegithupourunprojet/IAC_Ressources
   branch: main
   # Adresse du site en ligne (à corriger si le nom de domaine change).
-  base_url: https://iac-ressources.vercel.app
+  base_url: https://www.isabellecourias.fr
   auth_endpoint: api/auth
 
 # Les images ajoutées depuis l'éditeur sont rangées ici.
