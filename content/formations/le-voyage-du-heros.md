@@ -14,11 +14,11 @@ prerequis: (à compléter)
 
 La capacité à être sûr de sa légitimité est une compétence précieuse dans divers domaines professionnels et académiques. Cette formation vous permet de renforcer votre confiance et d'acquérir les compétences nécessaires pour devenir le thérapeute qui sommeille en vous.
 
-# Le program
+# Le programme
 
 ## Jour 1 : se (re)connecter à ses ressources intérieures
 
-> **Objectif :** accueillir ses rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrdoutes et poser les bases d'une légitimité interne.
+> **Objectif :** accueillir ses doutes et poser les bases d'une légitimité interne.
 
 ### Matin (3 h) : identifier et accueillir ses doutes
 
