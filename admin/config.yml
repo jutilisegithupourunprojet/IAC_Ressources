@@ -23,8 +23,74 @@ collections:
           - { label: "Phrase d'accroche (au-dessus du titre)", name: kicker, widget: string }
           - { label: "Paragraphe d'introduction", name: intro, widget: text }
           - { label: "Ligne des métiers (sous l'introduction)", name: metiers, widget: string }
+          - label: "Section « Vous vous reconnaissez ? »"
+            name: reconnait
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - { label: "4 questionnements", name: points, widget: list, min: 4, max: 4 }
+              - { label: Conclusion, name: conclusion, widget: text }
+          - label: "Section « La diversité des ressources »"
+            name: ressources
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - label: "Carte 1 — Psycho-praticienne"
+                name: item1
+                widget: object
+                collapsed: true
+                fields: [{ label: Titre, name: titre, widget: string }, { label: Texte, name: texte, widget: text }]
+              - label: "Carte 2 — Formation PNL"
+                name: item2
+                widget: object
+                collapsed: true
+                fields: [{ label: Titre, name: titre, widget: string }, { label: Texte, name: texte, widget: text }]
+              - label: "Carte 3 — Coaching d'entreprise"
+                name: item3
+                widget: object
+                collapsed: true
+                fields: [{ label: Titre, name: titre, widget: string }, { label: Texte, name: texte, widget: text }]
+              - label: "Carte 4 — Hypnose Éricksonienne"
+                name: item4
+                widget: object
+                collapsed: true
+                fields: [{ label: Titre, name: titre, widget: string }, { label: Texte, name: texte, widget: text }]
+          - label: "Section « Retrouver son chemin » (vidéo)"
+            name: chemin
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+          - label: "Section Podcasts"
+            name: podcasts_teaser
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
           - { label: "Titre de la section « Ateliers & Formations »", name: teaser_titre, widget: string }
           - { label: "Texte de la section « Ateliers & Formations »", name: teaser_texte, widget: text }
+          - label: "Section « Ce qu'on en dit »"
+            name: temoignages
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+              - { label: Citation, name: citation, widget: text }
+              - { label: "Note sous la citation", name: note, widget: text }
+          - label: "Bandeau final « Envie d'en parler ? »"
+            name: cta_final
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
 
       - name: apropos
         label: "À propos"

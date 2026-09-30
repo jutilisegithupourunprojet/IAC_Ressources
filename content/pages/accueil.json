@@ -2,6 +2,43 @@
   "kicker": "Le poids et le sens des mots",
   "intro": "Je vous accompagne pour explorer vos ressources intérieures, revisiter votre parcours de vie et avancer, mot après mot, vers ce qui a du sens pour vous.",
   "metiers": "Psycho-praticienne · Formatrice PNL · Coach d'entreprise certifiée RNCP",
+  "reconnait": {
+    "titre": "Vous vous reconnaissez ?",
+    "texte": "Chaque accompagnement est unique, mais certains questionnements reviennent souvent.",
+    "points": [
+      "Une fatigue ou une perte de sens dans votre vie professionnelle.",
+      "L'envie d'une reconversion, sans savoir par où commencer.",
+      "Des schémas qui se répètent, dans le travail comme dans la vie.",
+      "Une équipe ou une communication d'entreprise à réinventer."
+    ],
+    "conclusion": "Dans tous les cas, un espace d'écoute, sans jugement, pour poser les choses et retrouver votre propre chemin."
+  },
+  "ressources": {
+    "titre": "La diversité des ressources pour s'adapter à votre réalité.",
+    "texte": "Chaque accompagnement s'appuie sur ces facettes complémentaires du parcours d'Isabelle.",
+    "item1": { "titre": "Psycho-praticienne", "texte": "Un espace d'écoute pour explorer votre histoire, comprendre vos schémas et retrouver vos propres ressources." },
+    "item2": { "titre": "Formation PNL", "texte": "Transmettre les outils de la Programmation Neuro-Linguistique pour aller, pas à pas, du point A au point B." },
+    "item3": { "titre": "Coaching d'entreprise", "texte": "Des interventions sur mesure en entreprise : communication, cohésion d'équipe et accompagnement du changement." },
+    "item4": { "titre": "Hypnose Éricksonienne", "texte": "Mobiliser vos ressources inconscientes en douceur, en complément du travail conscient d'introspection." }
+  },
+  "chemin": {
+    "titre": "Retrouver son chemin",
+    "texte": "Pas à pas, avec bienveillance et positivité, (re)trouver la direction qui a du sens pour soi, et dans sa vie professionnelle."
+  },
+  "podcasts_teaser": {
+    "titre": "Podcasts",
+    "texte": "Tirer le fil rouge des gens sur leur parcours : des voix, des histoires, un même chemin, comment chacun avance d'un bout à l'autre afin d'en inspirer ce qui s'y reconnaitrons."
+  },
   "teaser_titre": "Ateliers & Formations",
-  "teaser_texte": "Découvrez les ateliers et formations proposés, avec leur programme détaillé."
+  "teaser_texte": "Découvrez les ateliers et formations proposés, avec leur programme détaillé.",
+  "temoignages": {
+    "titre": "Ce qu'on en dit",
+    "texte": "Les mots de celles et ceux qui font le chemin. Bientôt réunis ici.",
+    "citation": "Témoignages des personnes accompagnées, qui seront ici... ou non ?",
+    "note": "Après un accompagnement, votre ressenti a sa place ici, avec votre accord."
+  },
+  "cta_final": {
+    "titre": "Envie d'en parler ?",
+    "texte": "Un premier échange suffit souvent pour poser les bases. Écrivez-moi, je reviens vers vous rapidement."
+  }
 }
