@@ -54,7 +54,7 @@ window.iacMarkdownLite = function markdownLite(src) {
       if (heading) {
         const level = heading[1].length;
         if (level === 1) {
-          return `<h2 class="mt-12 first:mt-0 text-center text-3xl sm:text-4xl font-bold text-terracotta-dark"><span class="inline-block pb-3 border-b-4 border-corail/60">${inline(heading[2])}</span></h2>`;
+          return `<h2 class="mt-12 first:mt-0 mb-6 text-center text-3xl sm:text-4xl font-bold text-terracotta-dark"><span class="inline-block pb-1 border-b-4 border-corail/60">${inline(heading[2])}</span></h2>`;
         }
         if (level === 2) {
           return `<h3 class="mt-10 flex items-center gap-3 text-2xl sm:text-3xl font-bold text-olive-dark"><span class="h-7 w-1.5 rounded-full bg-terracotta shrink-0" aria-hidden="true"></span>${inline(heading[2])}</h3>`;
