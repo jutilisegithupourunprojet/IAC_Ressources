@@ -1,0 +1,13 @@
+{
+  "kicker": "Se retrouver, ensemble",
+  "intro": "Retrouvez tous les ateliers proposés et réservez directement votre créneau via l'agenda partagé ci-dessous.",
+  "pratique": {
+    "titre": "Bon à savoir",
+    "format_titre": "Format",
+    "format_texte": "En individuel ou en petit groupe, selon l'atelier.",
+    "lieu_titre": "Lieu",
+    "lieu_texte": "En cabinet (Saint-Rémy-de-Provence, Tarascon) ou à distance.",
+    "inscription_titre": "Inscription",
+    "inscription_texte": "Via l'agenda ci-dessus ou le formulaire de contact."
+  }
+}

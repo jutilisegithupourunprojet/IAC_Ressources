@@ -185,6 +185,48 @@ collections:
           - { label: "Épisode 2 — titre", name: ep2_titre, widget: string }
           - { label: "Épisode 2 — identifiant vidéo YouTube", name: ep2_id, widget: string }
           - { label: "Épisode 2 — description", name: ep2_description, widget: text }
+          - { label: "Titre du bandeau final", name: cta_titre, widget: string }
+          - { label: "Texte du bandeau final", name: cta_texte, widget: text }
+
+      - name: agenda
+        label: Agenda
+        file: content/pages/agenda.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+          - label: "Section « Bon à savoir »"
+            name: pratique
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: "Format — titre", name: format_titre, widget: string }
+              - { label: "Format — texte", name: format_texte, widget: text }
+              - { label: "Lieu — titre", name: lieu_titre, widget: string }
+              - { label: "Lieu — texte", name: lieu_texte, widget: text }
+              - { label: "Inscription — titre", name: inscription_titre, widget: string }
+              - { label: "Inscription — texte", name: inscription_texte, widget: text }
+
+      - name: ateliers_formations_page
+        label: "Ateliers & Formations (en-tête)"
+        file: content/pages/ateliers-formations.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+
+      - name: blog_page
+        label: "Blog (en-tête)"
+        file: content/pages/blog.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
+
+      - name: reservation_page
+        label: "Réservation (en-tête)"
+        file: content/pages/reservation.json
+        fields:
+          - { label: "Phrase d'accroche", name: kicker, widget: string }
+          - { label: "Paragraphe d'introduction", name: intro, widget: text }
 
       - name: agenda_liens
         label: "Agenda et formulaires"
