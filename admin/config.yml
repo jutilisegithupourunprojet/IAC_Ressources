@@ -33,6 +33,38 @@ collections:
           - { label: "Phrase d'accroche", name: kicker, widget: string }
           - { label: "Paragraphe d'introduction", name: intro, widget: text }
           - { label: "Citation", name: citation, widget: string }
+          - label: Biographie
+            name: bio
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Paragraphe 1", name: p1, widget: text }
+              - { label: "Paragraphe 2", name: p2, widget: text }
+              - { label: "Paragraphe 3", name: p3, widget: text }
+              - { label: "5 étiquettes (ex. Psycho-Praticienne)", name: badges, widget: list, min: 5, max: 5 }
+          - label: Parcours
+            name: parcours
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - label: "5 étapes"
+                name: etapes
+                widget: list
+                min: 5
+                max: 5
+                fields:
+                  - { label: Titre, name: titre, widget: string }
+                  - { label: Texte, name: texte, widget: text }
+          - label: "Ma manière d'accompagner"
+            name: valeurs
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Titre, name: titre, widget: string }
+              - { label: Texte, name: texte, widget: text }
+          - { label: "Titre du bandeau final", name: cta_titre, widget: string }
+          - { label: "Texte du bandeau final", name: cta_texte, widget: text }
 
       - name: outils
         label: "Mes outils"

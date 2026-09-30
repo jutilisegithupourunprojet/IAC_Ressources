@@ -1,5 +1,33 @@
 {
   "kicker": "Mon parcours",
   "intro": "De la communication d'entreprise à l'accompagnement des personnes : un même métier, celui des mots justes.",
-  "citation": "Citation ou quelque chose qui te défini ?"
+  "citation": "Citation ou quelque chose qui te défini ?",
+  "bio": {
+    "p1": "Formée très tôt à la conception-rédaction au sein d'une famille d'écrivains et de paroliers, Isabelle a d'abord fait carrière dans la communication d'entreprise. Ce sont les mots, déjà, qui construisaient les messages, les marques, les récits.",
+    "p2": "Cette même exigence du langage m'a naturellement conduite vers l'accompagnement des personnes : un Coaching Professionnel certifié RNCP, puis une spécialisation en Programmation Neuro-Linguistique et en Hypnose Éricksonienne.",
+    "p3": "« Que ce soient ceux que l'on se dit ou ceux que l'on transporte dans nos échanges, les mots déterminent souvent les réussites ou les incompréhensions. » C'est à travers ce fil rouge que le poids et le sens des mots relient chacun de mes accompagnements.",
+    "badges": [
+      "Formatrice en Communication",
+      "Psycho-Praticienne",
+      "Coach Professionnel RNCP",
+      "Enseignante PNL",
+      "Hypnose Éricksonienne"
+    ]
+  },
+  "parcours": {
+    "titre": "Mon parcours professionnel",
+    "etapes": [
+      { "titre": "Chef de Publicité & Directrice de la Communication", "texte": "Une carrière dans la communication d'entreprise, au service des mots, des messages et des marques." },
+      { "titre": "Coaching Professionnel certifié RNCP", "texte": "La bascule vers l'accompagnement des personnes, avec la même exigence du langage." },
+      { "titre": "Programmation Neuro-Linguistique", "texte": "Une spécialisation puis un enseignement : transmettre des outils concrets, pas à pas." },
+      { "titre": "Hypnose Éricksonienne", "texte": "Un complément en douceur, pour mobiliser aussi les ressources inconscientes." },
+      { "titre": "I.A.C Ressources", "texte": "Psycho-praticienne, formatrice PNL et coach d'entreprise à Saint-Rémy-de-Provence et Tarascon." }
+    ]
+  },
+  "valeurs": {
+    "titre": "Ma manière d'accompagner",
+    "texte": "Pas à pas, avec bienveillance et positivité, (re)trouver la direction qui a du sens pour soi, et dans sa vie professionnelle."
+  },
+  "cta_titre": "On se rencontre ?",
+  "cta_texte": "Un premier échange pour faire connaissance et voir ensemble ce qui vous correspond."
 }
