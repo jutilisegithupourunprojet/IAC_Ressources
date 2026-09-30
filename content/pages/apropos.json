@@ -1,7 +1,7 @@
 {
-  "kicker": "Mon parcours",
-  "intro": "De la communication d'entreprise à l'accompagnement des personnes : un même métier, celui des mots justes.",
-  "citation": "Citation ou quelque chose qui te défini ?",
+  "kicker": "Mon cheminement",
+  "intro": "De la communication d'entreprise à l'accompagnement des personnes : un même métier, celui des mots qui résonnent.",
+  "citation": "« Semer des graines, ouvrir des fenêtres et laisser à chacun la liberté d'éclairer sa propre voie »",
   "bio": {
     "p1": "Formée très tôt à la conception-rédaction au sein d'une famille d'écrivains et de paroliers, Isabelle a d'abord fait carrière dans la communication d'entreprise. Ce sont les mots, déjà, qui construisaient les messages, les marques, les récits.",
     "p2": "Cette même exigence du langage m'a naturellement conduite vers l'accompagnement des personnes : un Coaching Professionnel certifié RNCP, puis une spécialisation en Programmation Neuro-Linguistique et en Hypnose Éricksonienne.",
@@ -17,16 +17,31 @@
   "parcours": {
     "titre": "Mon parcours professionnel",
     "etapes": [
-      { "titre": "Chef de Publicité & Directrice de la Communication", "texte": "Une carrière dans la communication d'entreprise, au service des mots, des messages et des marques." },
-      { "titre": "Coaching Professionnel certifié RNCP", "texte": "La bascule vers l'accompagnement des personnes, avec la même exigence du langage." },
-      { "titre": "Programmation Neuro-Linguistique", "texte": "Une spécialisation puis un enseignement : transmettre des outils concrets, pas à pas." },
-      { "titre": "Hypnose Éricksonienne", "texte": "Un complément en douceur, pour mobiliser aussi les ressources inconscientes." },
-      { "titre": "I.A.C Ressources", "texte": "Psycho-praticienne, formatrice PNL et coach d'entreprise à Saint-Rémy-de-Provence et Tarascon." }
+      {
+        "titre": "Chef de Publicité & Directrice de la Communication",
+        "texte": "Une carrière dans la communication d'entreprise, au service des mots, des messages et des marques.Mon premier poste au sein d'une agence de communication fut celui de conceptrice-rédactrice."
+      },
+      {
+        "titre": "Coaching Professionnel certifié RNCP",
+        "texte": "La bascule vers l'accompagnement des personnes, avec la même exigence du langage."
+      },
+      {
+        "titre": "Programmation Neuro-Linguistique",
+        "texte": "Une spécialisation depuis 2006 puis un enseignement (2018) transmettre des outils concrets, pas à pas."
+      },
+      {
+        "titre": "Hypnose Éricksonienne",
+        "texte": "Un complément en douceur, pour mobiliser aussi les ressources inconscientes.(enseignante en Hypnose Éricksonienne )"
+      },
+      {
+        "titre": "I.A.C Ressources",
+        "texte": "Psycho-praticienne, formatrice et Enseignante PNL & Hypnose Éricksonienne  et coach d'entreprise à Saint-Rémy-de-Provence et Tarascon."
+      }
     ]
   },
   "valeurs": {
     "titre": "Ma manière d'accompagner",
-    "texte": "Pas à pas, avec bienveillance et positivité, (re)trouver la direction qui a du sens pour soi, et dans sa vie professionnelle."
+    "texte": "J’ai accompagné beaucoup des miens aussi bien dans la maladie que dans leurs derniers moments et ils m’ont appris énormément sur la préciosité de la vie, de la qualité de ces moments partagés. J’ai appris la patience, l’écoute et la résilience. Cela m’a déterminé à vouloir donner des couleurs à la vie, permette qu’elle puisse s’éclairer alors que le ciel s’assombrit, ouvrir les yeux sur l’instant présent et voir que souvent, il est simple, sécure et ouvert à ce que l’on veut y vivre. Alors naturellement, j’ai envie de transmettre à ceux qui le souhaitent cette confiance et cet espoir et proposer de venir, chacun, porter la pierre à l’édifice commun . \n\n« Que ce soient ceux que l'on se dit ou ceux que l'on transporte dans nos échanges, les mots déterminent souvent les réussites ou les incompréhensions. » C'est à travers ce fil rouge que le poids et le sens des mots relient chacun de mes accompagnements."
   },
   "cta_titre": "On se rencontre ?",
   "cta_texte": "Un premier échange pour faire connaissance et voir ensemble ce qui vous correspond."
