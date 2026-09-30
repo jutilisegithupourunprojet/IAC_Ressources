@@ -1,44 +1,56 @@
 {
-  "kicker": "Le poids et le sens des mots",
-  "intro": "Je vous accompagne pour explorer vos ressources intérieures, revisiter votre parcours de vie et avancer, mot après mot, vers ce qui a du sens pour vous.",
+  "kicker": "La quête de sens ,le sens des mots!",
+  "intro": "« La vie est un mouvement perpétuel : Apprendre à en faire notre plus belle opportunité  éclaire le chemin de notre épanouissement. »\nLe changement et l'adaptation ne sont pas des obstacles, mais l'essence même de notre existence. À travers la thérapie et le coaching, vous pouvez trouver  des outils concrets pour cesser de subir ces transitions et apprendre à naviguer avec elles en toute conscience. Ensemble, transformons chaque mouvement de la vie en un chemin vers plus d'équilibre, de sérénité et de gratitude.",
   "metiers": "Psycho-praticienne · Formatrice PNL · Coach d'entreprise certifiée RNCP",
   "reconnait": {
-    "titre": "Vous vous reconnaissez ?",
-    "texte": "Chaque accompagnement est unique, mais certains questionnements reviennent souvent.",
+    "titre": "Quelle situation familière vous amènerait à envisager des changements ?",
+    "texte": "Parfois, il est plus bienveillant pour soi d’être accompagné d’un professionnel pour, se sentir écouté, extérioriser la problématique, l’observer différemment et répondre à des questions choisies pour permettre de cheminer et trouver les solutions adaptées.",
     "points": [
       "Une fatigue ou une perte de sens dans votre vie professionnelle.",
       "L'envie d'une reconversion, sans savoir par où commencer.",
       "Des schémas qui se répètent, dans le travail comme dans la vie.",
       "Une équipe ou une communication d'entreprise à réinventer."
     ],
-    "conclusion": "Dans tous les cas, un espace d'écoute, sans jugement, pour poser les choses et retrouver votre propre chemin."
+    "conclusion": "Prendre le temps pour soi d' un espace d'écoute, sans jugement, pour poser les choses et retrouver son  propre chemin."
   },
   "ressources": {
-    "titre": "La diversité des ressources pour s'adapter à votre réalité.",
-    "texte": "Chaque accompagnement s'appuie sur ces facettes complémentaires du parcours d'Isabelle.",
-    "item1": { "titre": "Psycho-praticienne", "texte": "Un espace d'écoute pour explorer votre histoire, comprendre vos schémas et retrouver vos propres ressources." },
-    "item2": { "titre": "Formation PNL", "texte": "Transmettre les outils de la Programmation Neuro-Linguistique pour aller, pas à pas, du point A au point B." },
-    "item3": { "titre": "Coaching d'entreprise", "texte": "Des interventions sur mesure en entreprise : communication, cohésion d'équipe et accompagnement du changement." },
-    "item4": { "titre": "Hypnose Éricksonienne", "texte": "Mobiliser vos ressources inconscientes en douceur, en complément du travail conscient d'introspection." }
+    "titre": "La diversité de ressources pour s'adapter à votre questionnement.",
+    "texte": "Grâce à la synergie de différentes approches — coaching, hypnose, PNL ou CNV —, nous construisons un accompagnement sur mesure, entièrement ajusté à votre histoire et à vos objectifs.",
+    "item1": {
+      "titre": "Psycho-praticienne",
+      "texte": "« Les mots sont, selon moi, notre plus inépuisable source de magie. » -JK Rowling\nLes mots que l'on choisit méritent d'être pleinement entendus et approfondis : ils façonnent notre réalité.\nForte d'une expérience de plus de 20 ans — au cours de laquelle la précision du langage et la puissance de la communication ont toujours été au cœur de ma pratique, y compris dans mes fonctions de direction —, j'accorde une importance essentielle au sens des mots.\nPsycho-praticien(ne) depuis 2006, j'accompagne les adultes lors des moments de transition et d'épreuve (stress, deuil, phobies, perte de sens). Ma démarche repose sur une conviction simple : vous possédez déjà en vous les ressources nécessaires pour définir pleinement qui vous êtes, quelle est  votre vie. À travers une approche humaniste, brève et psychocorporelle"
+    },
+    "item2": {
+      "titre": "Formation PNL",
+      "texte": "Devenir Enseignante en PNL a été un tournant majeur dans mon parcours. Cette approche révèle les mécanismes qui façonnent nos comportements et nos choix. En découvrant les structures de nos pensées et de nos émotions, nous apprenons à mieux nous comprendre pour transformer durablement notre quotidien. La PNL clarifie nos échanges en réduisant les interprétations et les quiproquos. Elle offre à chacun des clés concrètes pour communiquer avec justesse et sérénité. Une démarche sur mesure à découvrir en accompagnement individuel ou en atelier.\n\n« Le cerveau est capable d’apprendre rapidement. La PNL ne sert pas à réparer des personnes cassées, mais à leur réapprendre à utiliser leur propre cerveau. » Richard Bandler"
+    },
+    "item3": {
+      "titre": "Coaching d'entreprise « La meilleure façon de prédire l'avenir, c'est de le créer. » — Peter Drucker",
+      "texte": "Issue du monde de la communication d'entreprise — où j’ai  exercé comme Chef de Publicité puis Directrice de la Communication —, je propose des interventions sur mesure axées sur la communication interne, la cohésion d'équipe et l'accompagnement du changement.\nLe coaching d'entreprise est un levier puissant qui permet de clarifier la vision, de fluidifier les relations et de débloquer les situations complexes au sein des organisations. Particulièrement efficace lorsqu'il est mené en amont, il agit de manière préventive pour désamorcer les tensions avant même qu'elles ne surviennent et instaurer une dynamique sereine et performante. Je vous apporte l'exigence et la précision du langage qui ont construit l'ensemble de ma carrière."
+    },
+    "item4": {
+      "titre": "Hypnose Éricksonienne « Faites confiance à votre inconscient, il sait plus de choses que vous. » — Milton Erickson",
+      "texte": "Créée par le psychiatre Milton Erickson, l’hypnose Éricksonienne considère l’inconscient comme un réservoir inépuisable de ressources. Loin de la perte de contrôle, cette approche douce instaurée par Erickson permet d'entrer en véritable conversation avec votre inconscient. Elle apporte une tout autre dimension au travail d'introspection en permettant de lever des blocages très spécifiques — stress, croyances limitantes ou étapes clés. En contournant les résistances du mental, cette méthode vous aide à vous réapproprier pleinement vos choix et retrouver votre liberté d'action. Mon parcours d'enseignante m'a offert une vision encore plus fine et subtile de cet univers inconscient. Cette posture nourrit au quotidien ma pratique pour vous guider avec précision au cœur de cette immense richesse intérieure."
+    }
   },
   "chemin": {
     "titre": "Retrouver son chemin",
     "texte": "Pas à pas, avec bienveillance et positivité, (re)trouver la direction qui a du sens pour soi, et dans sa vie professionnelle."
   },
   "podcasts_teaser": {
-    "titre": "Podcasts",
-    "texte": "Tirer le fil rouge des gens sur leur parcours : des voix, des histoires, un même chemin, comment chacun avance d'un bout à l'autre afin d'en inspirer ce qui s'y reconnaitrons."
+    "titre": "Podcasts Le Fil Rouge — Accompagner le mouvement de la vie et le sens de nos parcours",
+    "texte": "Le fil rouge de notre existence, c'est cette quête de sens invisible qui repose sur nos choix, nos réussites et nos bifurcations. Au fil des épisodes, je vous invite à une quête d'alchimie : apprendre à transformer véritablement chaque obstacle et chaque transition en une opportunité de croissance et de sérénité.\nConsciente de la puissance du langage, je me perçois  telle  comme une Semeuse . \nChaque parole est une graine, Je veille à ce que mes mots soient toujours justes, éthiques et éclairants, sans jamais rien imposer. Ce que je vous partage n'est qu'un prisme parmi d'autres."
   },
   "teaser_titre": "Ateliers & Formations",
   "teaser_texte": "Découvrez les ateliers et formations proposés, avec leur programme détaillé.",
   "temoignages": {
-    "titre": "Ce qu'on en dit",
-    "texte": "Les mots de celles et ceux qui font le chemin. Bientôt réunis ici.",
-    "citation": "Témoignages des personnes accompagnées, qui seront ici... ou non ?",
+    "titre": "Échos des chemins parcourus - témoignages",
+    "texte": "À venir",
+    "citation": "À venir",
     "note": "Après un accompagnement, votre ressenti a sa place ici, avec votre accord."
   },
   "cta_final": {
-    "titre": "Envie d'en parler ?",
-    "texte": "Un premier échange suffit souvent pour poser les bases. Écrivez-moi, je reviens vers vous rapidement."
+    "titre": "Pour vous permettre de mieux comprendre , nous pouvons échanger",
+    "texte": "« Contactez-moi par mail pour fixer un rendez-vous téléphonique ou Zoom. C’est l’occasion d’élucider vos besoins et d’évaluer, en toute liberté, si ma démarche vous correspond. »"
   }
 }
