@@ -180,10 +180,10 @@ collections:
           - { label: "Phrase d'accroche", name: kicker, widget: string }
           - { label: "Paragraphe d'introduction", name: intro, widget: text }
           - { label: "Épisode 1 — titre", name: ep1_titre, widget: string }
-          - { label: "Épisode 1 — identifiant vidéo YouTube", name: ep1_id, widget: string, hint: "Les 11 caractères après watch?v= dans l'adresse YouTube." }
+          - { label: "Épisode 1 — identifiant vidéo YouTube", name: ep1_id, widget: string, required: false, hint: "Les 11 caractères après watch?v= dans l'adresse YouTube. Laisser ce champ vide (ne rien écrire, pas même XXX) pour que cet épisode n'apparaisse pas du tout sur le site." }
           - { label: "Épisode 1 — description", name: ep1_description, widget: text }
           - { label: "Épisode 2 — titre", name: ep2_titre, widget: string }
-          - { label: "Épisode 2 — identifiant vidéo YouTube", name: ep2_id, widget: string }
+          - { label: "Épisode 2 — identifiant vidéo YouTube", name: ep2_id, widget: string, required: false, hint: "Laisser vide pour masquer cet épisode." }
           - { label: "Épisode 2 — description", name: ep2_description, widget: text }
           - { label: "Titre du bandeau final", name: cta_titre, widget: string }
           - { label: "Texte du bandeau final", name: cta_texte, widget: text }
