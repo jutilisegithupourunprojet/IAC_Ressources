@@ -253,6 +253,21 @@ collections:
       - { label: Prérequis, name: prerequis, widget: string, required: false }
       - { label: "Présentation complète", name: body, widget: markdown, hint: "# pour un grand titre centré (une grande partie : introduction, programme, méthodes…), ## pour une sous-partie (ex. Jour 1), ### pour un petit intitulé (ex. Matin), > pour encadrer un objectif important." }
 
+  - name: podcasts_audio
+    label: "Podcasts — épisodes audio (MP3)"
+    folder: content/podcasts-audio
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: Titre, name: title, widget: string }
+      - { label: "Description courte", name: description, widget: text }
+      - { label: "Image de couverture", name: image, widget: image, required: false }
+      - label: "Fichier audio (MP3)"
+        name: audio
+        widget: file
+        media_folder: "/assets/audio/uploads"
+        public_folder: "/assets/audio/uploads"
+
   - name: blog
     label: "Articles du blog"
     folder: content/blog
