@@ -15,9 +15,13 @@
  *   modèle (utile pour reconstituer une URL à partir d'un simple identifiant, ex.
  *   data-embed-src:https://www.youtube.com/embed/{video_id}). Les valeurs insérées
  *   dans un modèle sont échappées pour rester correctes dans une URL.
+ * - data-cms-hide-if-empty="cle" : cache complètement l'élément (hidden) si le champ
+ *   est vide ou absent dans /admin (utile pour un bloc optionnel, ex. un épisode vidéo
+ *   qu'on n'a pas encore enregistré — laisser le champ vide le fait disparaître).
  *
  * Un champ vide, absent, ou un fichier introuvable ne change rien : le texte
- * écrit dans la page reste affiché.
+ * écrit dans la page reste affiché (sauf pour data-cms-hide-if-empty, qui cache
+ * l'élément dans ce cas précis).
  */
 window.iacMarkdownLite = function markdownLite(src) {
   const escapeHtml = (s) =>
@@ -150,6 +154,14 @@ window.iacMarkdownLite = function markdownLite(src) {
         });
         if (hasValue) el.setAttribute(attr, value);
       });
+    });
+  });
+
+  document.querySelectorAll('[data-cms-hide-if-empty]').forEach((el) => {
+    const key = el.getAttribute('data-cms-hide-if-empty');
+    run(el, (data) => {
+      const value = getPath(data, key);
+      if (value == null || String(value).trim() === '') el.hidden = true;
     });
   });
 })();
