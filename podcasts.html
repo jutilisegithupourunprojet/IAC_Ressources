@@ -90,9 +90,21 @@
         </div>
       </section>
 
+      <section aria-labelledby="podcast-audio-title" class="relative py-16 px-6">
+        <div class="max-w-3xl mx-auto">
+          <h2 id="podcast-audio-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark text-center mb-8">Écouter</h2>
+
+          <ul id="podcast-audio-grid" hidden class="space-y-4"></ul>
+
+          <div id="podcast-audio-empty" class="clay-soft border-2 border-dashed border-sable-dark bg-white/50 px-8 py-10 text-center">
+            <p class="text-black/60 italic text-sm">Aucun épisode audio publié pour l'instant.</p>
+          </div>
+        </div>
+      </section>
+
       <section aria-labelledby="episodes-title" class="relative py-16 px-6">
         <div class="max-w-6xl mx-auto">
-          <h2 id="episodes-title" class="sr-only">Épisodes</h2>
+          <h2 id="episodes-title" class="font-script text-3xl sm:text-4xl text-terracotta-dark text-center mb-10">Regarder</h2>
 
           <!--
             Emplacements d'épisodes : src doit être au format https://www.youtube.com/embed/VIDEO_ID
@@ -205,6 +217,7 @@
 </div>
 
 <script src="assets/js/content-loader.js" defer></script>
+<script src="assets/js/podcast-player.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/cookies.js" defer></script>
 <script src="assets/js/ribbon.js" defer></script>

@@ -77,3 +77,14 @@ buildIndex(path.join(root, 'content', 'formations'), (slug, data) => ({
   image: data.image || '',
   date: data.date || '',
 }));
+
+buildIndex(path.join(root, 'content', 'podcasts-audio'), (slug, data) => ({
+  slug,
+  title: data.title || slug,
+  description: data.description || '',
+  image: data.image || '',
+  audio: data.audio || '',
+  // Pas de champ date visible dans /admin : le slug est préfixé par la date
+  // de création (voir le "slug" dans admin/config.yml), ce qui suffit à trier.
+  date: slug,
+}));
