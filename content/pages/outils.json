@@ -1,9 +1,9 @@
 {
-  "kicker": "Comment j'accompagne",
-  "intro": "Mon parcours m'a amenée à me former à des domaines très variés. Aujourd'hui, je m'appuie sur ces quatre approches pour vous accompagner à votre rythme, dans votre vie personnelle comme professionnelle.",
+  "kicker": "L'accompagnement , à quoi ça sert ?",
+  "intro": "Être accompagné à travers mes différentes activités — qu'il s'agisse de psychothérapie, de PNL ou d'hypnose ericksonienne — c'est s'offrir un espace sur-mesure pour explorer vos mécanismes intérieurs et libérer vos propres ressources. Cet accompagnement est utile car il permet de sortir des schémas répétitifs, de traverser les transitions de vie et de décoder la communication visible et invisible de votre inconscient. Il sert à pacifier vos émotions, à apaiser votre quotidien et à retrouver une autonomie juste et durable. En vous guidant avec bienveillance et expertise, il offre un repère stable pour transformer durablement votre vie et vous aligner avec vos besoins profonds. Je vous invite à découvrir en détail chaque type d'accompagnement en cliquant sur les propositions ci-dessous pour trouver la formule qui résonne avec vous.",
   "outil1": {
     "titre": "Psycho-praticienne",
-    "texte": "Un espace d'écoute pour explorer votre histoire, comprendre vos schémas et retrouver vos propres ressources. Que ce soient les mots que l'on se dit ou ceux que l'on transporte dans nos échanges, ils déterminent souvent les réussites ou les incompréhensions. C'est ce fil que l'on tire ensemble.",
+    "texte": "Faire appel à un psycho-praticien, c'est s'offrir un espace sur-mesure, rien qu'à soi, pour déposer ce qui pèse et avancer à son propre rythme. C'est une démarche profondément humaine et engagée, bâtie sur une alliance de confiance et une écoute sans jugement. Fort de mon expérience, je ne suis pas là pour vous dire quoi faire, mais pour vous accompagner avec bienveillance dans le décryptage de vos émotions et de vos blocages. Chaque parcours est unique : nous ajustons ensemble les outils et l'approche thérapeutique en fonction de qui vous êtes, de votre histoire et de vos besoins du moment. Ensemble, nous explorons vos ressources pour vous aider à dénouer des situations complexes, à traverser les tempêtes du quotidien et à retrouver un équilibre juste. C'est ce fil que l'on tire ensemble.",
     "points": [
       "Mieux comprendre vos schémas répétitifs",
       "Retrouver vos propres ressources",
@@ -13,7 +13,7 @@
   },
   "outil2": {
     "titre": "Formation PNL",
-    "texte": "Enseignante en Programmation Neuro-Linguistique, Isabelle transmet des outils concrets pour comprendre comment vous fonctionnez et changer, pas à pas, ce qui ne vous convient plus. En individuel ou lors des ateliers découverte proposés régulièrement.",
+    "texte": "Faire appel à mes formations ou à mes ateliers, c'est choisir un voyage intérieur , à la fois pragmatique et profondément humain, pour apprendre à utiliser ses propres ressources  au service de ses besoins et de son épanouissement.\n\nEn tant qu'enseignante en PNL et en hypnose Ericksonienne, je m'appuie sur ces deux disciplines pour vous transmettre des outils concrets. Je vous propose deux approches complémentaires :\n\nDes formations centrées sur la PNL, pour comprendre finement nos mécanismes de fonctionnement, décoder ce qui se joue entre notre communication visible et la part invisible de notre inconscient, et apprendre à communiquer avec toujours plus de justesse et de sérénité au quotidien.\n\nDes ateliers conçus comme un véritable parcours d'exploration intérieure, pour opérer un travail sur soi et des transformations profondes, tournées vers la connaissance de soi et l'évolution personnelle.\n\nChaque parcours est unique et s'ajuste à votre rythme. Mon rôle est d'être pleinement à votre service, comme un repère d'expertise et un catalyseur d'élan, pour vous donner les clés de votre propre transformation, pas à pas.",
     "points": [
       "Des outils concrets, applicables immédiatement",
       "Ateliers découverte et formations approfondies",
@@ -22,8 +22,8 @@
     ]
   },
   "outil3": {
-    "titre": "Coaching d'entreprise",
-    "texte": "Issue du monde de la communication d'entreprise. Chef de Publicité puis Directrice de la Communication. Isabelle propose des interventions sur mesure : communication interne, cohésion d'équipe et accompagnement du changement, avec la même exigence du langage qui a construit sa carrière.",
+    "titre": "Le coaching d'entreprise",
+    "texte": "Faire appel à un coach, qu'il soit professionnel ou individuel, c'est s'offrir un espace de stratégie et de mise en mouvement, taillé sur-mesure pour vos ambitions. C'est un accompagnement pragmatique et orienté vers l'action, bâti sur une alliance de confiance et un partenariat exigeant mais bienveillant. Grace à  mon expérience Directrice de la Communication  en entreprise, j'ai rencontré bon nombre de situations et je  suis convaincue que croire en son potentiel favorise l'épanouissement professionnel. Ainsi je cous accompagne à révéler votre propre potentiel et à structurer votre démarche. Chaque parcours est unique : nous ajustons ensemble les objectifs et les leviers d'action en fonction de vos enjeux, de votre contexte et de vos aspirations profondes. Ensemble, nous clarifions votre vision, dépassons vos freins et transformons les défis — qu'ils soient managériaux, de transition de carrière ou d'épanouissement personnel — en véritables opportunités de réussite. Mon rôle est d'être pleinement à votre service, comme un partenaire donnant l'élan et un miroir constructif, pour vous guider vers des résultats concrets, durables et alignés avec qui vous êtes.",
     "points": [
       "Communication interne & cohésion d'équipe",
       "Accompagnement du changement",
@@ -33,7 +33,7 @@
   },
   "outil4": {
     "titre": "Hypnose Éricksonienne",
-    "texte": "En complément du travail conscient d'introspection, l'hypnose Éricksonienne permet de mobiliser en douceur vos ressources inconscientes. Particulièrement utile face au stress, aux blocages ou pour préparer une étape importante.",
+    "texte": "Faire appel à l'hypnose ericksonienne, c'est s'offrir un espace d'exploration intérieure sur-mesure, à la fois pragmatique et profondément humain, pour apprendre à dialoguer avec votre inconscient au service de vos besoins et de votre épanouissement.\n\nL'hypnose ericksonienne est une approche respectueuse et mobilisatrice : elle considère que vous possédez déjà en vous toutes les ressources nécessaires pour opérer des changements durables. Elle permet de court-circuiter les résistances du mental conscient pour accéder directement à vos potentiels de guérison, de libération et d'évolution.\n\nJe vous propose de découvrir cette discipline à travers plusieurs formats adaptés à votre rythme :\n\nDes séances et ateliers d'autohypnose, pour apprendre à devenir autonome, apprivoiser vos états modifiés de conscience et utiliser vos propres clés intérieures au quotidien.\n\nL'écoute de métaphores du changement en MP3, conçues comme des voyages sonores et symboliques pour nourrir votre inconscient, apaiser l'esprit et enclencher de nouvelles dynamiques de transformation en toute autonomie chez vous.\n\nChaque parcours est unique et s'ajuste à qui vous êtes. Mon rôle est d'être pleinement à votre service, comme un repère d'expertise et un guide bienveillant, pour vous aider à renouer avec vos propres solutions et transformer durablement votre quotidien.",
     "points": [
       "Une approche douce et respectueuse",
       "Utile face au stress et aux blocages",
@@ -41,6 +41,6 @@
       "Pour préparer une étape importante"
     ]
   },
-  "cta_titre": "Un outil vous parle particulièrement ?",
+  "cta_titre": "besoin d'explorer un domaine en particulier ? ?",
   "cta_texte": "Parlons-en ensemble lors d'un premier échange, pour choisir ce qui vous correspond le mieux aujourd'hui."
 }
